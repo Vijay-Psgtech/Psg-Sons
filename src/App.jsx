@@ -18,6 +18,7 @@ import Brothers2 from './sections/Brothers2';
 import FifthBrother from './sections/FifthBrother';
 import FifthBrother2 from './sections/FifthBrother2';
 import Rkguest from './sections/rkguest';
+import Leading from './sections/Leading';
 
 const anchors = [
   'home',
@@ -70,6 +71,7 @@ function App() {
               <FifthBrother />
               <FifthBrother2 />
               <Rkguest />
+              <Leading />
             </ReactFullpage.Wrapper>
           )
         }}
