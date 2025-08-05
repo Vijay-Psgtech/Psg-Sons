@@ -112,4 +112,43 @@ export const SchoolData = [
         website: 'https://psgmsp.edu.in/',
         content: 'This educational institution focuses on shaping young minds during their most formative years. By embracing a comprehensive educational philosophy it provides elementary school students with a unique and enriching learning journey.'
     },
-]
+];
+
+export const CollegeData =[
+    {
+        title: 'PSG College of Arts & Sciences (1947)',
+        image: '/images/colleges/psgcas.webp',
+        website: 'https://www.psgcas.ac.in/',
+        content: 'At a time when the entirety of Coimbatore had just one arts college, PSG Ganga Naidu envisioned a college that met the growing demands of the student population in the region. As a result, PSG College of Arts and Sciences was established in 1947 as one of the first liberal arts colleges in the region and the first private college in Coimbatore.  Having completed 75 years of successfully rendering its services to the student community andmaking its mark as one of the premier institutions for higher education in India, PSG College ofArts and Science continues on in its journey.'
+    },
+    {
+        title: 'PSG College of Technology (1951)',
+        image: '/images/colleges/psgct.webp',
+        website: 'https://www.psgtech.edu/',
+        content: 'The story goes that, while studying in London, Dr. GR Damodaran and friends dreamed of working together to ensure the growth of Coimbatore as the industrial hub of South India. Towards this, GRD founded PSG College of Technology with a focus on providing the best engineering education with practical knowledge that met international standards. Today, PSG College of Technology is recognized as one of the top engineering colleges in India and Tamil Nadu, offering valuable courses for innovation and success, including the coveted B Tech and M Tech programs. '
+    },
+    {
+        title: 'PSG Institute of Management (1994)',
+        image: '/images/colleges/psgim.jpg',
+        website: 'https://psgim.ac.in/',
+        content: 'While Coimbatore grew quickly as an entrepreneurial centre in South India, it also showed a glaring dearth of management professionals to run the enterprises. Initially, a Department of Management Sciences was created at PSG College of Technology in 1966 offering postgraduate diploma courses in Business and Industrial Management. At a time when the Indian Institute of Management was just getting set up in Calcutta and Ahmedabad, PSG was the first to introduce this in South India. Later in the 90s, to meet the growing demand, it was decided to turn the Department of Management Sciences into PSG Institute of Management dedicated to management studies and research.PSG Institute of Management has been at the forefront of delivering exceptional MBA courses. In its pursuit to achieve excellence in business education, PSG Institute of Management is committed to become one of the leading business schools in the country. The institute has been consistently ranked among the top 50 b-schools in the country. PSG Institute of Management secured the 22nd position among the top business schools in the country according to Business World magazine, and Education World ranked it 20th among the leading business schools in the nation.'
+    },
+    {
+        title: 'PSG Institute of Advanced Studies (2006)',
+        image: '/images/colleges/psgias.webp',
+        website: 'https://www.psgias.ac.in/',
+        content: 'The Charities long understood the need for a dedicated research institution for the sake of innovation and technical advancement. Hence PSG Institute of Advanced Studies was established in 2006. It offers postgraduate and research studies in emerging areas of technology.The institute also acts as a pathway for global education for students of PSG Institution. Through collaborations with well-known institutions across USA, UK, Germany, and Australia the institute offers undergraduate and postgraduate degrees in engineering and business administration, where the students will begin their studies in India and graduate in the partner universities abroad.PSG Institute of Advanced Studies (PSG IAS) opens doors to a world of possibilities beyond borders through its comprehensive study abroad programs. With a focus on overseas education, the institute empowers students to explore foreign universities and gain a global perspective.  It serves as a catalyst for personal and academic growth, shaping individuals ready to make a meaningful impact on a global scale.'
+    },
+    {
+        title: 'PSG Institute of Technology & Applied Research (2014)',
+        image: '/images/colleges/psgitech.webp',
+        website: 'https://psgitech.ac.in/',
+        content: 'To meet the growing demand for an institute that specialises in niche areas in technology and to accommodate more students into engineering courses, the PSG Institute of Technology and Applied Research was established.The multiple Centres of Excellence at the institute work towards finding solutions for persisting technological problems faced today. For example, the centre is working to develop earthquake resistant building techniques and processes and also smart textiles for soldiers posted in high altitude areas.'
+    },
+    {
+        title: 'PSG Institute of Architecture & Planning (2021)',
+        image: '/images/colleges/psgarch.webp',
+        website: 'https://www.psgiap.ac.in/',
+        content: 'Different decades bring in different and ever-evolving needs. The PSG Institute of Architecture & Planning was established with a vision of achieving excellence in Architectural education, and to nurture architects with ingenuity, intelligence, and integrity to face global challenges and serve society'
+    },
+];

@@ -22,6 +22,7 @@ import Leading from './sections/Leading';
 import Trustees from './sections/Trustees';
 import Education from './sections/Education';
 import Schools from './sections/Schools';
+import Colleges from './sections/Colleges';
 
 const anchors = [
   'home',
@@ -40,6 +41,7 @@ const anchors = [
   'trustees',
   'edu-odyssey',
   'schools',
+  'colleges',
   'chronicles-of-excellence',
   'alumni',
   'visual-heritage',
@@ -80,6 +82,7 @@ function App() {
               <Trustees />
               <Education />
               <Schools />
+              <Colleges />
             </ReactFullpage.Wrapper>
           )
         }}
