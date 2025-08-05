@@ -281,3 +281,56 @@ export const OtherIntData = [
         content: 'The PSG Convention Center stands as an architectural masterpiece, ideally suited for hosting a variety of events such as professional conferences and cultural gatherings. Boasting cutting-edge amenities, distinctive design elements, and convenient accessibility attributed to its strategic placement, it unquestionably emerges as the top selection for all types of occasions.'
     },
 ];
+
+export const GalleryData = [
+    {
+        title: '',
+        image: '/images/gallery/image1.webp',
+        content: 'The very first building out of which the PSG & Sons’ Charities functioned.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image2.webp',
+        content: 'Old photograph of PSG Sarvajana School.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image3.webp',
+        content: 'PSG Rangasamy Naidu with the students of the Sarvajana School Hostel in 1924. The School was one of the first ones to provide accommodation for students in Coimbatore.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image4.webp',
+        content: 'The first batch of students of PSG Sarvajana School with Founder Trustee PSG Narayanaswamy Naidu, the Head Master and Senior teachers.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image5.webp',
+        content: 'PSG Industrial Institute celebrated its Annual Day with the trainers and their products in 1930.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image6.webp',
+        content: 'PSG Rangasamy Naidu with the Principal, Srinivasa Ayyangar, and teachers of Sarvajana School in 1940.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image7.webp',
+        content: 'Shri. Kumaraswami Raja, Former Chief Minister of Madras State (1950-1952), inaugurated the PSG College of Technology on August 26, 1951.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image8.webp',
+        content: 'Shri. Kumaraswami Raja, Former Chief Minister of Madras State (1950-1952), inaugurated the PSG College of Technology on August 26, 1951'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image9.webp',
+        content: 'Dr. A.L. Mudaliar pictured with Shri. Venkataswamy Naidu, Founder Trustee, PSG & Sons’ Charities, and Dr. G.R. Damodaran, the first Principal of PSG College of Technology in 1951.'
+    },
+    {
+        title: '',
+        image: '/images/gallery/image10.webp',
+        content: 'Dr. G.R. Damodaran, the first Principal, with the administrative staff and members of the faculty of PSG College of Technology in 1951.'
+    },
+];
