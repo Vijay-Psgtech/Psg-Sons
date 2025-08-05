@@ -32,7 +32,7 @@ const Trustees = () => {
     <div className='section h-[100dvh]'>
       <div className='relative h-[100dvh] overflow-hidden'>
         {/* Scroll Buttons */}
-        <div className='flex shrink-0 gap-4 absolute right-16 bottom-12 z-20'>
+        <div className='flex shrink-0 gap-4 absolute right-16 bottom-6 z-20'>
           <button onClick={handleScrollLeft} className='w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md'>
             <FaChevronLeft />
           </button>
@@ -68,18 +68,16 @@ const Trustees = () => {
               <div
                 key={index}
                 onClick={()=>handleModalClick(data)}
-                className={`h-[100dvh] drop-shadow-xl cursor-pointer group pointer-events-auto py-12 p-8 w-screen md:w-fit min-w-[15rem] max-w-[65rem] flex shrink-0 ${index % 2 === 0 ? 'items-start justify-start flex-col mt-24 ml-36 w-full false' : 'items-end -translate-y-12 justify-end  flex-col-reverse  md:-mx-36 false'}`}
+                className={`h-[100dvh] drop-shadow-xl cursor-pointer group pointer-events-auto py-12 p-8 w-screen md:w-fit min-w-[15rem] max-w-[65rem] flex shrink-0 ${index % 2 === 0 ? 'items-start justify-start flex-col mt-24 ml-36 w-full false' : 'items-end -translate-y-24 justify-end  flex-col-reverse  md:-mx-24 false'}`}
               >
-                <div className={`rounded-xl flex gap-8 md:flex-row-reverse flex-col-reverse w-fit ${index % 2 === 0 ? '' : 'mt-auto mb-0'}`}>
-                  <div className='w-fit'>
-                    <h1 className='text-xl md:text-3xl whitespace-prewrap break-words text-ellipsis w-4/6 font-semibold'>{data.title}</h1>
-                    <p className='md:text-xl font-semibold tracking-tighter'>{data.desc}</p>
-                    <p className='w-1/2 mt-3 line-clamp-3 md:line-clamp-5'>{data.content}</p>
-                    <button 
-                      className='text-red-800 uppercase font-semibold text-sm cursor-pointer'
-                    >
-                        Read More
-                      </button>
+                <div className={`rounded-xl flex gap-8 md:flex-row-reverse flex-col-reverse w-full ${index % 2 === 0 ? '' : 'mt-auto mb-0'}`}>
+                  <div className='w-full md:w-[24rem]'>
+                    <h1 className='text-xl md:text-3xl font-semibold'>{data.title}</h1>
+                    <p className='md:text-xl font-medium tracking-tight'>{data.desc}</p>
+                    <p className='mt-2 text-sm md:text-base line-clamp-3 md:line-clamp-5'>{data.content}</p>
+                    <button className='text-red-800 uppercase font-semibold text-sm cursor-pointer'>
+                      Read More
+                    </button>
                   </div>
                   <img
                     alt={`trust${index}`}

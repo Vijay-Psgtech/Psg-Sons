@@ -20,6 +20,7 @@ import FifthBrother2 from './sections/FifthBrother2';
 import Rkguest from './sections/rkguest';
 import Leading from './sections/Leading';
 import Trustees from './sections/Trustees';
+import Education from './sections/Education';
 
 const anchors = [
   'home',
@@ -75,6 +76,7 @@ function App() {
               <Rkguest />
               <Leading />
               <Trustees />
+              <Education />
             </ReactFullpage.Wrapper>
           )
         }}
