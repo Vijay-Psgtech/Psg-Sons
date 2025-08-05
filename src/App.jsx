@@ -19,6 +19,7 @@ import FifthBrother from './sections/FifthBrother';
 import FifthBrother2 from './sections/FifthBrother2';
 import Rkguest from './sections/rkguest';
 import Leading from './sections/Leading';
+import Trustees from './sections/Trustees';
 
 const anchors = [
   'home',
@@ -34,6 +35,7 @@ const anchors = [
   'fifth-brother.2',
   'rk',
   'leading-the-way',
+  'trustees',
   'edu-odyssey',
   'chronicles-of-excellence',
   'alumni',
@@ -72,6 +74,7 @@ function App() {
               <FifthBrother2 />
               <Rkguest />
               <Leading />
+              <Trustees />
             </ReactFullpage.Wrapper>
           )
         }}
