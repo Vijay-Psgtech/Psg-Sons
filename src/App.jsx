@@ -21,6 +21,7 @@ import Rkguest from './sections/rkguest';
 import Leading from './sections/Leading';
 import Trustees from './sections/Trustees';
 import Education from './sections/Education';
+import Schools from './sections/Schools';
 
 const anchors = [
   'home',
@@ -38,6 +39,7 @@ const anchors = [
   'leading-the-way',
   'trustees',
   'edu-odyssey',
+  'schools',
   'chronicles-of-excellence',
   'alumni',
   'visual-heritage',
@@ -77,6 +79,7 @@ function App() {
               <Leading />
               <Trustees />
               <Education />
+              <Schools />
             </ReactFullpage.Wrapper>
           )
         }}

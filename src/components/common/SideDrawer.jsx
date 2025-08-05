@@ -61,6 +61,10 @@ const SideDrawer = ({ isOpen, onClose, data }) => {
                     </div>
                     <div>
                         <h2 className="font-bold mt-8 text-2xl">{data.title}</h2>
+                        {data.website && (
+                            <a target='_blank' className='font-semibold bg-amber-100 mt-1 block w-fit text-sm px-3 p-1 rounded-full' href={data.website}>
+                                Visit Website
+                            </a>)}
                         <p className="mt-4 pb-8 force-scroll isolate whitespace-pre-line align-bottom">{data.content}</p>
                     </div>
                     

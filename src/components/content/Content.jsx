@@ -74,3 +74,42 @@ export const TrusteeData = [
         content: 'Shri L. Gopalakrishnan assumed the role of Managing Trustee in May 2011, emphasizing quality education and the significance of research. He promoted faculty research through initiatives like scholarships for research scholars and the creation of PSG Distinguished Professor Fellowship.Under his leadership, a Center for Excellence was established at PSG College of Technology and PSG Institute of Medical Sciences and Research. Additionally, a hospital was inaugurated at Karadivavi, and collaborations with U.S. and European universities were initiated.Shri L. Gopalakrishnan pioneered "Vishnugranthi" in 2013, providing life education for children with special needs. In 2014, PSG Institute of Technology and Applied Research was founded, promoting the integration of teaching and research. Noteworthy initiatives include the "Vanavil" platform for Tamil literary personalities, the revival of the "PSG Kadambari" musical festival, and the "Yuva Kala Ratna Award" to recognize musical talent in Coimbatore.He spearheaded the creation of an eco-friendly crematorium in Peelamedu and introduced training for Panchayat Union school teachers. PSG & Sons’ Charities organized master health check-ups for Coimbatore police personnel and introduced alumni health cards. An undergraduate program on Robotics and Automation addressed industrial automation needs.As part of PSG Institutions’ Corporate Social Responsibility, a crematorium facility and drinking water projects were established. During his ongoing tenure, a 10 lakh square feet building was constructed for PSG hospital’s requirements, and facilities such as the Convention Centre, Institute of Architecture and Planning in Neelambur, and PSG Institute of Oncology have been established.'
     },
 ];
+
+export const SchoolData = [
+    {
+        title: 'PSG Sarvajana High School (1924)',
+        image: '/images/schools/sarv.webp',
+        website: 'https://psgsjhss.edu.in/',
+        content: 'The Sarvajana High School was the first educational institution to be set up by the PSG family. The name ’Sarvajana’ means ’for all humanity’. In the egalitarian spirit of the Mahatma, the PSG Sarvajana School was established promoting education for all, irrespective of social background. Strongly involved in the struggle for independence and social equality, the school caught the attention of nationalist leaders like Sir Rabindranath Tagore and Dr. Sarvepalli Radhakrishnan who also visited the school on a number of occasions; the Mahatma himself blessed the school praising its efforts.'
+    },
+    {
+        title: 'PSG Primary School, Vedapatti (1941)',
+        image: '/images/schools/vedapatti.webp',
+        website: 'https://psgpsv.edu.in/',
+        content: 'The Vedapatti school was taken over from the Coimbatore District Board in 1943 to help fulfil educational demands in the growing suburb of Vedapatti in Coimbatore. The school was renovated and equipped with one of the first scientific laboratories in the region.'
+    },
+    {
+        title: 'PSG Primary School, Peelamedu (1943)',
+        image: '/images/schools/primary.webp',
+        website: 'https://psgpsp.edu.in/',
+        content: 'In 1943, PSG Primary School in Peelamedu was established with a vision to bridge the educational gap in rural Peelamedu. Today, it stands as a beacon of excellence, dedicated to providing quality primary education to students, unlocking a world of opportunities for the young minds. The school’s curriculum extends beyond textbooks, fostering an environment where co-curricular activities play a pivotal role in shaping well-rounded individuals. The commitment to "Education for All" is at the heart of PSG Primary School’s mission. The school strives to make quality education accessible to students from all walks of life, ensuring that every child has the opportunity to unlock their full potential. The dedicated faculty employs innovative teaching methods, ensuring that each student not only meets but exceeds academic expectations. At PSG Primary School, education transcends the boundaries of the classroom. The school’s field trips are designed to ignite curiosity and enhance the learning experience. These excursions not only complement the curriculum but also provide students with practical insights into the world around them.'
+    },
+    {
+        title: 'PSG High School, Vedapatti (2005)',
+        image: '/images/schools/high.webp',
+        website: 'https://psghsv.edu.in/',
+        content: 'The primary school which came under PSG’s care in 1941 was then upgraded to middle and eventually into a high school in 2005. It caters to the young learners of the Vedapatti village providing them with the best education.'
+    },
+    {
+        title: 'PSG Public Schools (2002)',
+        image: 'images/schools/public.webp',
+        website: 'https://www.psgps.edu.in/',
+        content: 'The co-educational school operates with the intention of leaving behind a legacy of all-round development in its students through holistic education, equipping them with a competitive edge compared to their counterparts.'
+    },
+    {
+        title: 'PSG Matriculation School (2009)',
+        image: 'images/schools/matric.webp',
+        website: 'https://psgmsp.edu.in/',
+        content: 'This educational institution focuses on shaping young minds during their most formative years. By embracing a comprehensive educational philosophy it provides elementary school students with a unique and enriching learning journey.'
+    },
+]
