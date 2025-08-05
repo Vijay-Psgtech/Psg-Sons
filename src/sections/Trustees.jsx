@@ -83,6 +83,7 @@ const Trustees = () => {
                     alt={`trust${index}`}
                     className='size-[13rem] md:size-[16rem] object-contain hover:brightness-105 mt-0 mb-auto'
                     src={data.image}
+                    loading="lazy" 
                   />
                 </div>
               </div>

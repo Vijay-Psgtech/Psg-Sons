@@ -76,6 +76,7 @@ const HealthCare = () => {
                                     alt={`health${index}`}
                                     className='size-[13rem] md:size-[16rem] object-right-top hover:brightness-105 brightness-100 anim object-contain mt-0 mb-auto anim toppp pointer-events-auto object-right-bottom md:object-right-top'
                                     src={data.image}
+                                    loading='lazy'
                                 />
                             </div>
                         </div>
