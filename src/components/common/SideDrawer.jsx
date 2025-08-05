@@ -64,8 +64,11 @@ const SideDrawer = ({ isOpen, onClose, data }) => {
                         {data.website && (
                             <a target='_blank' className='font-semibold bg-amber-100 mt-1 block w-fit text-sm px-3 p-1 rounded-full' href={data.website}>
                                 Visit Website
-                            </a>)}
-                        <p className="mt-4 pb-8 force-scroll isolate whitespace-pre-line align-bottom">{data.content}</p>
+                            </a>
+                        )}
+                        {data.content.map((para, idx)=>(
+                            <p key={idx} className="mt-4 pb-4 force-scroll isolate whitespace-pre-line align-bottom">{para}</p>
+                        ))}
                     </div>
                     
 

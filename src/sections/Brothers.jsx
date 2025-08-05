@@ -14,8 +14,8 @@ const Brothers = () => {
                     <p className='text-md toppp tracking-widest -mt-36 uppercase font-semibold'>Chapter 4</p>
                     <h1 className="text-5xl toppppp mt-5 font-bold tracking-tighter w-full text-center mx-auto">The PSG Brothers</h1>
                 </div>
-                <img alt loading="lazy" width="1905" height="552" className='absolute bottom-0 drop-shadow-xl z-20 w-5/6 md:w-full centerh' src="/images/brothers.jpg"/>
-                <img alt loading="lazy" width="1000" height="1150" className='absolute object-contain w-1/2 md:w-1/3  mix-blend-overlay opacity- z-10 origin-bottom centerh bottom-0' src="/images/founder.jpg" />
+                <img alt="brothers" loading="lazy" width="1905" height="552" className='absolute bottom-0 drop-shadow-xl z-20 w-5/6 md:w-full centerh' src="/images/brothers.jpg"/>
+                <img alt="founder" loading="lazy" width="1000" height="1150" className='absolute object-contain w-1/2 md:w-1/3  mix-blend-overlay opacity- z-10 origin-bottom centerh bottom-0' src="/images/founder.jpg" />
             </div>
         </div>
     </div>
