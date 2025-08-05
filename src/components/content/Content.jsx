@@ -209,3 +209,75 @@ export const IndustrialData = [
         content: 'Aligned with the PSG Trust’s principle of fostering job creators, PSG-STEP was founded in collaboration with the Department of Science & Technology, Government of India, and All India Financial Institution. Its objective is to facilitate technology-driven enterprises in domains such as Software, Electronic Products, Advanced Mechanical Products, Environmentally-conscious Textile Products, and Bio-technology. It has played a pivotal role in nurturing entrepreneurship among tech graduates, resulting in over 30 entrepreneurs establishing ventures.'
     },
 ];
+
+export const HealthCareData = [
+    {
+        title: 'PSG Health Centres (since 1943)',
+        image: '/images/health/psghealth.webp',
+        website: 'https://psgimsr.ac.in/departments/peripheral-centers/psg-rural-health-training-center/',
+        content: 'PSG gained entry into the healthcare scenario through the establishment of a maternal and child care centre at Vedapatti in the year 1943. Later a primary health care centre, previously founded with the support of PSG Rangaswamy Naidu in 1939 was also inducted under the Trust’s care in 1949. Later primary health care centres were established to provide affordable health care services to the marginalised communities in Karadivavi and Neelambur along with the surrounding villages. These centres also function as training centres for the students of PSG IMS&R.'
+    },
+    {
+        title: 'PSG Institute of Medical Sciences & Research (1985)',
+        image: '/images/health/psg_ims.webp',
+        website: 'https://psgimsr.ac.in/',
+        content: 'A long standing dream of former Managing Trustee, Mr. G. Varadaraj, the PSG Institute of Medical Sciences & Research was founded with a vision to excel in providing world class medical education and creating a high degree of commitment among health professionals in keeping with the principle of “Health for All”. The institution continues to produce generation after generation of the finest medical professionals in the country who move forward to contribute immensely to the society.'
+    },
+    {
+        title: 'PSG Hospitals (1989)',
+        image: '/images/health/psg_hosp.webp',
+        website: 'https://www.psghospitals.com/',
+        content: 'An extension of PSG IMS&R, PSG Hospitals, is one of the largest private hospitals in India providing outstanding medical care. A highly qualified and experienced faculty, excellent state-of-the-art facilities and a dedicated team of healthcare professionals strive hard every day to ensure quality medical care is afforded to everyone.PSG IMS&R stands as a beacon in medical education, consistently ranking among the top medical institutes in India. Its commitment to quality education and the cultivation of a strong sense of social responsibility sets it apart, producing generations of healthcare professionals dedicated to making a positive impact on the health and well-being of communities.PSG Hospitals consistently ranks among the top hospitals in India for its exceptional healthcare services. The hospital’s commitment to quality medical care is reflected in its advanced facilities, cutting-edge medical technologies, and a team of compassionate healthcare professionals.Together, PSG IMS&R and PSG Hospitals stand as pillars of excellence in healthcare education and services. From producing top-tier medical professionals to providing outstanding medical care, these institutions continue to shape the future of healthcare in India.'
+    },
+    {
+        title: 'PSG College of Nursing (1994)',
+        image: '/images/health/psg_nursing.webp',
+        website: 'https://www.psgnursing.ac.in/',
+        content: 'PSG College of Nursing was established in the year 1994 under the PSG & Sons Charities trust with an aim to provide quality nursing education and prepare nurses with the highest level of education and practice. The College is affiliated to the Tamil Nadu Dr MGR Medical University, Chennai and is recognized by the Indian Nursing Council (INC) New Delhi, and the Tamil Nadu Nurses and Midwives Council, Chennai. The college of Nursing is located at the heart of the city at Peelamedu, in an area of 100 acres in which the 1300 bedded PSG Hospitals and PSG Institute of Medical Sciences and Research, PSG College of Pharmacy, PSG College of Physiotherapy, PSG Offshore Health Care Management Services are also accommodated. The eminent faculty members of College of Nursing and Medical College are committed to develop nursing personnel through quality education. PSG Hospitals, has wide and varied speciality areas with modern technological advances, provide opportunities for optimal development of clinical skills for the students. 100% results in the University Final year examination by our students speaks for the institution reputation.'
+    },
+    {
+        title: 'PSG College of Physiotherapy (1999)',
+        image: '/images/health/psg_physiotherapy.webp',
+        website: 'https://psgphysiotherapy.ac.in/',
+        content: 'PSG College of Physiotherapy was started as an 18th educational institution of PSG & Sons’ charities Trust under the dynamic leadership of Shri G.R.Karthikeyan on October 20th 1999 with the focus to produce skilled physiotherapy professionals. Undergraduate(B.P.T) and Post Graduate (M.P.T) courses were affiliated to the Tamilnadu Dr MGR Medical University, Chennai. The college provides a challenge and rewarding educational experience that enables students to develop as competent, evidence-based and patient-centered physiotherapy practitioners, capable of making a valuable contribution to the profession. The education and training are designed and guided by well-experienced medical professionals in contribution to the total development of the students. Teaching is delivered through a series of lectures, small group tutorials, presentations, practical skill and laboratory based sessions, peer group learning, clinical learning,   independent learning etc., which will be further supported through the completion of a 6 months clinical speciality placement.'
+    },
+    {
+        title: 'PSG College of Pharmacy (2001)',
+        image: '/images/health/psg_pharma.webp',
+        website: 'https://psgpharma.ac.in/',
+        content: 'PSG College of Pharmacy (PSGCP) was established in the year 2001 and is one more jewel in the crown of the PSG group, who are well known for their commitment to high standard education. The college of Pharmacy, which has now completed 20 years of existence and commitment to excellence in Pharmacy Education, is located in the PSG Health campus at Peelamedu in Coimbatore city, which is blessed with a temperate climate and excellent living conditions. The college is affiliated to the prestigious “The Tamil Nadu Dr. MGR Medical University” Chennai and also approved by the AICTE and Pharmacy Council of India, New Delhi. Since 2005, the college is consistently meeting annual ISO (International Organization for Standardization) Certification Standards.The college has good infrastructure with state of the art teaching and research facilities for students. PSG Health campus also has state of the art auditorium hall capable of hosting national and international conferences. The College has well equipped laboratories catering to the various disciplines like Pharmaceutics, Pharmacology, Pharmaceutical chemistry, Pharmaceutical Analysis, Pharmacy Practice, and Biotechnology. The library facilities encompass two full floors and every year Rs. 20 Lakhs worth of literature is being purchased to bring the library up to date with the latest information in the field of pharmacy. The pharmacy college was recently ranked 61st among pharmacy colleges across the nation, by NIRF 2023 MHRD which is indeed a phenomenal achievement for a privately funded institution which has only very recent history. Its philosophy is embedded in its commitment to quality as well as its vision and mission statements.'
+    },
+];
+
+export const OtherIntData = [
+    {
+        title: 'Manavar Illam (1995) ',
+        image: '/images/other_initiatives/manavar-illam.webp',
+        website: '',
+        content: 'Established in 1995, Manavar Illam serves as a haven for young boys who have been orphaned or come from single-parent households or similar challenging circumstances. These children are provided with quality education at both school and college levels within PSG Institutions. Currently, Manavar Illam is home to 160 school and 25 college students.Over the years, Manavar Illam has provided refuge for numerous boys from underprivileged backgrounds, ensuring they emerge as confident individuals armed with education. The institution goes beyond providing accommodation and education and fosters a holistic development approach.’Manavar Illam’ extends its support from Standard VI through the completion of school or college education. Selected boys are admitted to the Tamil or English medium sections of PSG Sarvajana School, where they are consciously groomed to appreciate their privileges and contribute to society.After completing their schooling, promising students receive free education in PSG CAS, PSG Polytechnic, and PSG Tech, with some industrious graduates finding employment within PSG Institutions. Managing Trustee Shri. L. Gopalakrishnan continues to carry forward the magnanimity of the Trust, as evidenced by the decision to enhance capacity and accommodate 200 children through the construction of a new four-floor building in 2020.Extra support comes in the form of special coaching provided through the Make A Difference (MAD) program, an NGO outreach initiative, and Bharathanatiyam dance training for the residents. The sports and recreation facilities, including a basketball court and access to football grounds, contribute to the residents’ physical development. Notably, they have secured the overall championship cup for three consecutive years in competitions for orphanage children organized by the Rotaract Club of Coimbatore.Annual excursions broaden the students travel experiences, developmental activities and alumni engagement further enrich their lives. The management also participates in the festivities of special occasions, such as Diwali, by distributing new clothing and sweets to uplift the spirits of the students.The feedback from alumni reflects deep gratitude, and inspired by the values instilled in them, they have formed an alumni association to give back to society.In essence, the commitment of PSG and Sons’ Charities to supporting and nurturing the underprivileged residents of Manavar Illam remains a heartfelt and enduring dedication.'
+    },
+    {
+        title: 'PSG Vishnu Granthi (2013)',
+        image: '/images/other_initiatives/vishnu-granthi.webp',
+        website: '',
+        content: 'The day care centre was established with the vision to commit to value the unblemished, innocent and wonderful life of children with special needs. Children with Cerebral Palsy, Autism, Down’s syndrome, Speech & Hearing impairments and Dyslexia are provided with special education and training in basic life skills. Currently, it functions with 25 students, aged 3 to 15, who are taken care of by a team of teaching & non-teaching staff. long with education, it also provides other remedial aids like Physiotherapy, Speech therapy, Yoga & Dance therapy. It was awarded a ‘5 Star’ rating by a team from Swachh Vidyalaya Puraskar (MoE) in association with UNICEF.'
+    },
+    {
+        title: 'PSG Samarpan',
+        image: '/images/other_initiatives/samarpan.webp',
+        website: '',
+        content: 'An eco-friendly crematorium in Coimbatore, dedicated to the public by PSG & Sons’ charities'
+    },
+    {
+        title: 'PSG Software Technologies (2017)',
+        image: '/images/other_initiatives/psg_softtech.webp',
+        website: 'https://www.psgsoftwaretechnologies.com/',
+        content: 'As India embarked on its digital journey, a realisation dawned within the Trust about the necessity for a dedicated organisation to address this evolution. This marked the inception of PSG Software Technologies, aimed at delivering inventive solutions that continuously push the boundaries. The company strives to pioneer original solutions spanning various Engineering domains, leveraging its well-established proficiency fostered through rigorous research and adventurous exploration.'
+    },
+    {
+        title: 'PSG Convention Centre (2022)',
+        image: '/images/other_initiatives/conv.webp',
+        website: 'https://psgconventioncenter.com/',
+        content: 'The PSG Convention Center stands as an architectural masterpiece, ideally suited for hosting a variety of events such as professional conferences and cultural gatherings. Boasting cutting-edge amenities, distinctive design elements, and convenient accessibility attributed to its strategic placement, it unquestionably emerges as the top selection for all types of occasions.'
+    },
+];

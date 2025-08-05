@@ -24,6 +24,8 @@ import Education from './sections/Education';
 import Schools from './sections/Schools';
 import Colleges from './sections/Colleges';
 import IndustrialTraining from './sections/IndustrialTraining';
+import HealthCare from './sections/HealthCare';
+import OthetInitiatives from './sections/OthetInitiatives';
 
 const anchors = [
   'home',
@@ -44,6 +46,8 @@ const anchors = [
   'schools',
   'colleges',
   'industrial-training',
+  'health-care',
+  'other-initiatives',
   'chronicles-of-excellence',
   'alumni',
   'visual-heritage',
@@ -86,6 +90,8 @@ function App() {
               <Schools />
               <Colleges />
               <IndustrialTraining />
+              <HealthCare />
+              <OthetInitiatives />
             </ReactFullpage.Wrapper>
           )
         }}

@@ -1,16 +1,16 @@
 import React, { useRef, useState } from 'react';
-import { IndustrialData } from '../components/content/Content';
+import { OtherIntData } from '../components/content/Content';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import SideDrawer from '../components/common/SideDrawer';
 
-const IndustrialTraining = () => {
+const OthetInitiatives = () => {
     const scrollRef = useRef();
     const [openDrawer, setOpenDrawer] = useState(false);
-    const [industryData, setIndustryData] = useState({});
+    const [otherIntData, setOtherIntData] = useState({});
 
     const handleModalClick = (data) => {
         setOpenDrawer(true);
-        setIndustryData(data);
+        setOtherIntData(data);
     };
 
     const handleScrollLeft = () => {
@@ -52,12 +52,12 @@ const IndustrialTraining = () => {
                         className='flex overflow-x-auto scroll-smooth space-x-8 px-4 py-8'
                     >
                         <div className='ml-12 lg:ml-24 flex h-screen justify-center flex-col items-start shrink-0 w-[20rem] md:w-1/4'>
-                            <h1 className='text-4xl font-bold tracking-tight'>PSG & the Industrialization of Coimbatore</h1>
+                            <h1 className='text-4xl font-bold tracking-tight'>CSR & Others</h1>
                             <p className='mt-4 lg:mt-6 text-lg w-11/12 mb-36 whitespace-pre-wrap'>
-                                At the epicentre of Coimbatore's transformation into the industrial and entrepreneurial hub of South India lies in our founders's visionary drive. They have invigorated this journey by founding training centres that consistently nurture top-tier technicians, infusing the region with vitality and expertise.
+                                PSG & Sons' Charities Social initiatives go beyond education and industry. The institutions is involved in projects aimed at promoting societal welfare.
                             </p>
                         </div>
-                        {IndustrialData.map((data, index)=>(
+                        {OtherIntData.map((data, index)=>(
                            <div
                             key={index}
                             onClick={()=>handleModalClick(data)}
@@ -73,7 +73,7 @@ const IndustrialTraining = () => {
                                     </button>
                                 </div>
                                 <img
-                                    alt={`industry${index}`}
+                                    alt={`health${index}`}
                                     className='size-[13rem] md:size-[16rem] object-right-top hover:brightness-105 brightness-100 anim object-contain mt-0 mb-auto anim toppp pointer-events-auto object-right-bottom md:object-right-top'
                                     src={data.image}
                                 />
@@ -86,10 +86,10 @@ const IndustrialTraining = () => {
             <SideDrawer
                 isOpen={openDrawer}
                 onClose={() => setOpenDrawer(false)}
-                data={industryData}
+                data={otherIntData}
             />
         </div>
     )
 }
 
-export default IndustrialTraining
+export default OthetInitiatives
