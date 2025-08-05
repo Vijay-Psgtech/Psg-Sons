@@ -152,3 +152,60 @@ export const CollegeData =[
         content: 'Different decades bring in different and ever-evolving needs. The PSG Institute of Architecture & Planning was established with a vision of achieving excellence in Architectural education, and to nurture architects with ingenuity, intelligence, and integrity to face global challenges and serve society'
     },
 ];
+
+export const IndustrialData = [
+    {
+        title: 'PSG Industrial Institute (1926)',
+        image: '/images/industrial/indinst.webp',
+        website: 'https://www.psgmachinetools.org/',
+        content: 'When the PSG brothers realised that they would need highly skilled technicians to be able to work in the mills that were coming up in Coimbatore, they set up the PSG Industrial Institute and pioneered the concept of an industry-academia connection. It was used as a training centre during World War II for training war technicians. The institute came into the limelight when it manufactured the first centrifugal pump & electric motor. In the early days the institute offered training programmes in various trades like smithy, carpentry, wiring, machining, printing and foundry technology. It is involved in the manufacture of indigenous motors, pumps and conventional lathes along with the development of new products. PSG Industrial Institute has been instrumental in the production of high-quality lathe machines and Milling Machines. These precision tools, crafted with expertise and innovation, contribute to the efficiency and accuracy of industrial operations. We embrace the future with state-of-the-art CNC machines. These computer numerical control machines redefine precision engineering, reflecting our commitment to staying at the forefront of technological advancements.'
+    },
+    {
+        title: 'PSG Polytechnic College (1939)',
+        image: '/images/industrial/poly.webp',
+        website: 'https://www.psgpolytech.ac.in/',
+        content: 'As the forward integration of PSG Industrial Institute, the PSG Polytechnic College is Coimbatore’s oldest and one of the largest polytechnic colleges in Tamil Nadu. It is well-known for its emphasis on industry-oriented training in the fields of Mechanical, Foundry, Textile, Electrical & Electronics, Computer Network, and Automobile among others. The college maintains strong ties with the industrial sector, facilitating internships, workshops, and interactions with experts to bridge the gap between academia and real-world applications.'
+    },
+    {
+        title: 'PSG & Sons’ Charities Metallurgy And Foundry Division (1974)',
+        image: '/images/industrial/metallurgy.webp',
+        website: 'http://www.psgfoundry.in/',
+        content: 'The PSG Metallurgy and Foundry Division in Neelambur was set up to meet the growing demand for cast iron products in India and abroad. With its range of sophisticated grey iron and Ni-hard castings, the foundry has carved a niche for itself in the global market. It also serves as a Research and Development Centre for students of PSG Institutions. These trainings provide enormous confidence and motivation for students to one day start businesses of their own.'
+    },
+    {
+        title: 'PSG Industrial Training Centre (1986)',
+        image: '/images/industrial/indtrain.webp',
+        website: '',
+        content: 'The centre offers training in the fields of fitter, electrician and wireman. It was later upgraded to PSG Industrial Training Institute in 2010. The institute trains students right after their completion of eighth or tenth grades.'
+    },
+    {
+        title: 'PSG Centre for Sponsored Research and Consultancy (1989)',
+        image: '/images/industrial/research_consultancy.webp',
+        website: '',
+        content: 'The PSG Centre for Sponsored Research and Consultancy, established in 1989, is a dedicated hub for fostering industrial consultancy and research initiatives. Serving as a crucial link between academia and industry, the center facilitates consultancy work and material/product testing for various government and private organizations. With a rich history of active participation in research, consultancy, and testing, the PSG Centre for Sponsored Research and Consultancy exemplifies a commitment to excellence. Notably, the center collaborates with PSG Industrial Institute on campus, showcasing a robust Industry-Institute Interaction model. The center stands ready to contribute its extensive experience and capabilities to drive innovation and success in collaborative projects.'
+    },
+    {
+        title: 'PSG Centre for Non-Formal and Continuing Education (1989)',
+        image: '/images/industrial/research_consultancy.webp',
+        website: 'https://www.psgtech.edu/Continuing%20Education.php',
+        content: 'The PSG Centre for Non-formal & Continuing Education (PSG CNCE), established in 1989, is a pivotal institution dedicated to the dissemination of the latest knowledge and advancements in Science and Technology. Focused on benefiting executives, working professionals, educational institutions, and the broader public, the center organizes well-planned, job-oriented, part-time, and full-time short-duration programs. Recognizing the importance of continuous education, PSG CNCE plays a crucial role in updating the knowledge of employed personnel who graduated long ago. Given that formal educational curricula often lag behind in incorporating the latest developments, these short-term programs become essential for students to prepare for employment. The center conducts ongoing studies to stay abreast of the latest developments and identifies areas relevant to students, the public, and job-oriented sectors. By establishing connections with various industries and organizations, PSG CNCE ensures alignment with their interests. Coordinators of selected programs meticulously plan and execute initiatives, often involving external experts to enhance the quality and relevance of the educational offerings. For those seeking to stay current in their fields or preparing for employment, PSG CNCE stands as a reliable source of contemporary knowledge and skill development.'
+    },
+    {
+        title: 'PSG Centre for Industrial Research and Development (1989)',
+        image: '/images/industrial/research_consultancy.webp',
+        website: 'https://www.psgtech.edu/Research/ird.html',
+        content: 'The Center for Industrial Research and Development at PSG Tech is on a mission to unite Industry and Institution through the provision of technical services. With a strong commitment to industrial research, the IRD department at PSG Tech has conducted numerous activities, including energy audits and services to over 180 industries in the past year. Key services offered by the center include Energy audit, Energy management solutions, Harmonics audit and mitigation solutions, Radiation study as per AERB requirements, Air/gas audit, Vibration analysis, Solar systems installations, Product developments, Strategic alliances with industries in research activities, Industrial equipment calibrations. Bio-medical equipment calibrations. The center actively seeks to forge strategic partnerships with industries and contribute to advancements in research and development. PSG Tech’s Center for Industrial Research and Development plays a vital role in fostering collaboration and providing technical expertise to meet the evolving needs of both Industry and Institution.'
+    },
+    {
+        title: 'PSG & Sons’ Charities Textile Research and Training Centre (1989)',
+        image: '/images/industrial/textile.webp',
+        website: '',
+        content: 'During its inception, the institute was established with the primary objective of enhancing the expertise of individuals within the textile industry through training initiatives. Over time, the organisation shifted its emphasis towards researching textile technology. The Ministry of Textiles, Government of India also acknowledged this effort and set up a project to promote the field of technical textiles in India.'
+    },
+    {
+        title: 'PSG Science & Technology Entrepreneurial Park (STEP) (1998)',
+        image: '/images/industrial/techpark.webp',
+        website: 'http://www.psgstep.org/',
+        content: 'Aligned with the PSG Trust’s principle of fostering job creators, PSG-STEP was founded in collaboration with the Department of Science & Technology, Government of India, and All India Financial Institution. Its objective is to facilitate technology-driven enterprises in domains such as Software, Electronic Products, Advanced Mechanical Products, Environmentally-conscious Textile Products, and Bio-technology. It has played a pivotal role in nurturing entrepreneurship among tech graduates, resulting in over 30 entrepreneurs establishing ventures.'
+    },
+];

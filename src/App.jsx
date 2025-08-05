@@ -23,6 +23,7 @@ import Trustees from './sections/Trustees';
 import Education from './sections/Education';
 import Schools from './sections/Schools';
 import Colleges from './sections/Colleges';
+import IndustrialTraining from './sections/IndustrialTraining';
 
 const anchors = [
   'home',
@@ -42,6 +43,7 @@ const anchors = [
   'edu-odyssey',
   'schools',
   'colleges',
+  'industrial-training',
   'chronicles-of-excellence',
   'alumni',
   'visual-heritage',
@@ -83,6 +85,7 @@ function App() {
               <Education />
               <Schools />
               <Colleges />
+              <IndustrialTraining />
             </ReactFullpage.Wrapper>
           )
         }}
