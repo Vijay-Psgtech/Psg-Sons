@@ -496,4 +496,227 @@ export const GalleryData = [
             'Dr. G.R. Damodaran, the first Principal, with the administrative staff and members of the faculty of PSG College of Technology in 1951.',
         ]
     },
+    {
+        title: '',
+        image: '/images/gallery/image11.webp',
+        content: [
+            'Union Minister M.M. Shah on a visit to the college in 1955.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image12.webp',
+        content: [
+            'Shri. C. D. Deshmuk, Chairman, Planning Commission, on a visit to PSG College of Technology in 1957.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image13.webp',
+        content: [
+            'Former Minister of Education, Law, and Finance for Madras State, Thiru C Subramaniam, on a visit to an exhibition at PSG Institutions in 1957.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image14.webp',
+        content: [
+            'Former Minister of Education, Law, and Finance for Madras State, Thiru C Subramaniam, on a visit to an exhibition at PSG Institutions in 1957.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image15.webp',
+        content: [
+            'Chief Minister of Tamil Nadu, Thiru K. Kamaraj, on his way to open the Hostel Blocks at PSG Polytechnic College in 1962.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image16.webp',
+        content: [
+            'Chief Minister of Tamil Nadu, Thiru K. Kamaraj, Prof M. S. Thacker, Prof. G.R. Damodaran, and Shri J.G. Abraham inaugurating the Hostel Blocks at PSG Polytechnic College in 1962.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image17.webp',
+        content: [
+            'On June 5th, 1966, Thiru. S.S. Rajagopalan took office as the Principal of PSG Sarvajana School.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image18.webp',
+        content: [
+            'Dr. A.L. Mudaliar, then Vice-Chancellor of the University of Madras, switched on the equipment of the High Voltage Laboratory in 1967.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image19.webp',
+        content: [
+            'Zakir Husain Khan, Former President of India (May 1967–May 1969), pictured on a visit to PSG Sarvajana School.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image20.webp',
+        content: [
+            'Prof. B. R. Krishnamoorthy & Prof. V. Subbaraman retired in 1970, as pictured here with Dr. G.R. Damodaran.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image21.webp',
+        content: [
+            'Thiru. P Sivalingam gives away the first “Best Projects Award” in 1972.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image22.webp',
+        content: [
+            'The 1974 Teachers’ Day celebrations got off to a great start with a test match between teachers and students.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image23.webp',
+        content: [
+            'Former Prime Minister of India, Smt. Indira Gandhi, interacts with the students of Sarvajana School during a visit for its Golden Jubilee celebrations in 1974.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image24.webp',
+        content: [
+            'Former Prime Minister of India, Smt. Indira Gandhi, interacts with the students of Sarvajana School during a visit for its Golden Jubilee celebrations in 1974.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image25.webp',
+        content: [
+            'Fakhruddin Ali Ahmed, former President of India (1974-1977), presents an award to Ashok, a student of PSG Sarvajana School.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image26.webp',
+        content: [
+            'Shri. C. Subramaniam inaugurates the Golden Jubilee celebrations of PSG & Sons’ Charities in 1977.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image27.webp',
+        content: [
+            'Shri. Piloo Mody with G. Varadaraj, Former Trustee at PSG College of Technology in 1980.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image28.webp',
+        content: [
+            'Rajendra Prasad, the first President of India, on a visit to PSG College of Technology, records his impressions in the visitor’s book as Dr. G.R. Damodaran looks on.',
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image29.webp',
+        content: []
+    },
+    {
+        title: '',
+        image: '/images/gallery/image30.webp',
+        content: [
+            'Dr. G.R. Damodaran with foreign delegates.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image31.webp',
+        content: [
+            'PSG Industrial Institute was known nationally for its highly reliable and well-manufactured products, as seen at the exhibition pictured here.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image32.webp',
+        content: [
+            'Demonstrations of the PSG Motors in villages.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image33.webp',
+        content: [
+            'Founder Trustee Shri. Venkataswamy Naidu attending a function at PSG College of Technology.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image34.webp',
+        content: [
+            'GR Govindarajulu with the Sales team of PSG Industrial Institute.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image35.webp',
+        content: [
+            'As part of the Silver Jubilee celebrations of PSG College of Technology, an exhibition was installed and Shri. VR Neduchelian, Minister of Education, Government of Tamil Nadu visits one of the stalls.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image36.webp',
+        content: [
+            'Shri. K. Kamaraj, Former Chief Minister of Tamil Nadu, pictured on a visit to PSG Institutions with Shri. PSG Venkataswamy Naidu, Founder Trustee, and Dr. G. R. Damodaran.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image37.webp',
+        content: [
+            'His Excellency Governor of Tamil Nadu, Mohan Lal Sukhadia, with Dr. G.R. Damodaran and students.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image38.webp',
+        content: [
+            'Dr. G. R. Damodaran on a visit to PSG Industrial Institute.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image39.webp',
+        content: [
+            'His Excellency Prabhudas Patwari, Governor of Tamil Nadu, received at PSG College of Arts & Science by Dr. G. R. Damodaran.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image40.webp',
+        content: [
+            'Shri. C. Subramaniam inaugurated the Silver Jubilee celebrations of PSG College of Technology.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image41.webp',
+        content: [
+            'Dr. G.R. Damodaran receives Dr. A.L. Mudaliar, then Vice-Chancellor of the University of Madras, for a function at PSG College of Arts & Science.'
+        ]
+    },
+    {
+        title: '',
+        image: '/images/gallery/image42.webp',
+        content: [
+            'Dr. G.R. Damodaran, Founder Principal, PSG Arts College with his successor Shri. B.R. Krishnamurthy.'
+        ]
+    },
+    
 ];
