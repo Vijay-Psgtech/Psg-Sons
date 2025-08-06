@@ -1,7 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import SideDrawer from '../components/common/SideDrawer';
+
+
+const drawerData = 
+  {
+    title: 'P. S. Govindaswamy Naidu',
+    image: '/images/trustees/Fpsg.webp',
+    content: [ 
+      'The legacy of the PSG institutions founded by Shri.P.S.Govindaswamy Naidu has been handed down through several generations. Each time the baton was handed down to the successor of the Trust, these golden words, "Let there be charity, so others can share my family’s prosperity" are embedded firmly and hence the Founder’s vision has only grown richer and more profound. Education, one of the most treasured clauses in the Trust deed, attained sharper focus each growing year while each succeeding Head of Trust, carried the dreams of the Founder on their shoulders towards fulfillment of the Vision and the betterment of the Future.',
+
+    ]
+  };
 
 const Legacy2 = () => {
   const bgRef = useRef();
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  const handleDrawerClick = () => {
+        setOpenDrawer(true);
+    };
 
   const handleMouseMove = (e) => {
     const { clientX, currentTarget } = e;
@@ -49,7 +66,7 @@ const Legacy2 = () => {
                 <li className='text-sm flex justify-center items-center min-h-[5rem] p-3 rounded-lg bg-white drop-shadow-xl  px-5'>
                     P.S. Narappa Naidu
                 </li>
-                <li className='text-sm flex justify-center items-center min-h-[5rem] cursor-pointer p-3 rounded-lg bg-white drop-shadow-xl  px-5'>
+                <li className='text-sm flex justify-center items-center min-h-[5rem] cursor-pointer p-3 rounded-lg bg-white drop-shadow-xl  px-5' onClick={() => handleDrawerClick()}>
                     P.S. Govindaswamy Naidu
                 </li>
                 <li className='text-sm flex justify-center items-center min-h-[5rem] p-3 rounded-lg bg-white drop-shadow-xl  px-5'>
@@ -61,6 +78,11 @@ const Legacy2 = () => {
             </ul>
         </div>
       </div>
+      <SideDrawer
+        isOpen={openDrawer}
+        onClose={() => setOpenDrawer(false)}
+        data={drawerData}
+      />
     </div>
   );
 };
