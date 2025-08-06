@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import SideDrawer from '../components/common/SideDrawer';
+import { motion } from "framer-motion";
+import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
 
 const drawerData = 
 {
@@ -22,6 +24,7 @@ const drawerData =
 
 const Leading = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
+    const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
 
     const handleImageClick = () => {
         setOpenDrawer(true);
@@ -29,22 +32,29 @@ const Leading = () => {
    
     return (
         <>
-            <div className='section h-[100dvh]'>
+            <div className='section h-[100dvh]' onMouseMove={handleMouseMove}>
                 <div className='overflow' tabIndex="-1">
                     <div className='flex flex-col overflow-hidden relative text-center justify-center items-center h-[100dvh] w-full'>
                     
                         {/* Background Image */}
                         <div className='absolute left-0 top-0 w-full bottt overflow-hidden h-[100dvh] z-0'>
-                            <div className='absolute left-0 top-0 w-full overflow-hidden h-[100dvh]'>
-                            <img 
-                                alt="bg" 
-                                loading="lazy" 
-                                width={1587} 
-                                height={1079} 
-                                className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' 
-                                src="/images/bg2.jpg" 
-                            />
-                            </div>
+                            <motion.div 
+                                style={{ x: translateX }}
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 1, ease: "easeOut" }}
+                                viewport={{ once: false, amount: 0.3 }}
+                                className='absolute left-0 top-0 w-full overflow-hidden h-[100dvh]'
+                            >
+                                <img 
+                                    alt="bg" 
+                                    loading="lazy" 
+                                    width={1587} 
+                                    height={1079} 
+                                    className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' 
+                                    src="/images/bg2.jpg" 
+                                />
+                            </motion.div>
                         </div>
 
                         {/* Text Content */}

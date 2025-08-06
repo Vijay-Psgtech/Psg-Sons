@@ -1,9 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { GalleryData } from '../components/content/Content';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
 
 const Gallery = () => {
     const scrollRef = useRef();
+    const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
 
     const handleScrollLeft = () => {
         scrollRef.current?.scrollBy({
@@ -20,7 +23,7 @@ const Gallery = () => {
     };
 
     return (
-        <div className='section h-[100dvh]'>
+        <div className='section h-[100dvh]' onMouseMove={handleMouseMove}>
             <div className='relative h-[100dvh] overflow-hidden'>
                 <div className='flex shrink-0 gap-4 absolute right-16 bottom-12 z-20'>
                     <button onClick={handleScrollLeft} className='w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md'>
@@ -30,14 +33,21 @@ const Gallery = () => {
                         <FaChevronRight />
                     </button>
                 </div>
-                <div className='absolute left-0 top-0 w-full h-[100dvh] overflow-hidden'>
+                <motion.div 
+                    style={{ x: translateX }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    viewport={{ once: false, amount: 0.3 }} 
+                    className='absolute left-0 top-0 w-full h-[100dvh] overflow-hidden'
+                >
                     <img
-                        alt="bg"
-                        loading='lazy'
-                        className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60'
-                        src="/images/bg2.jpg"
+                    alt="bg"
+                    loading='lazy'
+                    className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60'
+                    src="/images/bg2.jpg"
                     />
-                </div>
+                </motion.div>
                 <div className='relative z-10 text-gray-900 px-8'>
                     <div 
                         ref={scrollRef} 

@@ -2,11 +2,15 @@ import React, { useRef, useState } from 'react';
 import { TrusteeData } from '../components/content/Content';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import SideDrawer from '../components/common/SideDrawer';
+import { motion } from "framer-motion";
+import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
+
 
 const Trustees = () => {
   const scrollRef = useRef();
   const [openDrawer, setOpenDrawer] = useState(false);
   const [trusteeData, setTrusteeData] = useState({});
+  const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
   
   const handleModalClick = (data) => {
     setOpenDrawer(true);
@@ -29,7 +33,7 @@ const Trustees = () => {
 
   return (
 
-    <div className='section h-[100dvh]'>
+    <div className='section h-[100dvh]' onMouseMove={handleMouseMove}>
       <div className='relative h-[100dvh] overflow-hidden'>
         {/* Scroll Buttons */}
         <div className='flex shrink-0 gap-4 absolute right-16 bottom-6 z-20'>
@@ -42,14 +46,21 @@ const Trustees = () => {
         </div>
 
         {/* Background */}
-        <div className='absolute left-0 top-0 w-full h-[100dvh] overflow-hidden'>
+        <motion.div 
+          style={{ x: translateX }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.3 }} 
+          className='absolute left-0 top-0 w-full h-[100dvh] overflow-hidden'
+        >
           <img
             alt="bg"
             loading='lazy'
             className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60'
             src="/images/bg2.jpg"
           />
-        </div>
+        </motion.div>
 
         {/* Content */}
         <div className='relative z-10 text-gray-900 px-8'>

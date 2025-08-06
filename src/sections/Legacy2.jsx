@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import SideDrawer from '../components/common/SideDrawer';
+import AnimatedSection from '../components/common/AnimatedSection';
 
 
 const drawerData = 
@@ -13,42 +14,15 @@ const drawerData =
   };
 
 const Legacy2 = () => {
-  const bgRef = useRef();
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const handleDrawerClick = () => {
-        setOpenDrawer(true);
-    };
-
-  const handleMouseMove = (e) => {
-    const { clientX, currentTarget } = e;
-    const { width, left } = currentTarget.getBoundingClientRect();
-    const x = clientX - left;
-    const moveX = ((x / width) - 0.5) * 20; // range: -10 to 10
-
-    if (bgRef.current) {
-      bgRef.current.style.transform = `translateX(${moveX}px)`;
-    }
+      setOpenDrawer(true);
   };
 
-  return (
-    <div
-      className="section relative flex flex-col justify-center items-center text-center h-[100dvh] w-full overflow-hidden"
-      onMouseMove={handleMouseMove}
-    >
-      {/* Background Image with smooth X translation */}
-      <div
-        ref={bgRef}
-        className="absolute inset-0 z-0 transition-transform duration-500 ease-in-out"
-      >
-        <img
-          src="/images/bg2.jpg"
-          alt="Legacy2"
-          loading="lazy"
-          className="w-full h-full object-cover opacity-60"
-        />
-      </div>
 
+  return (
+    <AnimatedSection bgImage="/images/bg2.jpg">
       {/* Foreground content */}
       <div className="relative z-10 text-gray-900 px-4">
         <p className="text-md tracking-widest uppercase font-semibold">Chapter 2</p>
@@ -83,7 +57,7 @@ const Legacy2 = () => {
         onClose={() => setOpenDrawer(false)}
         data={drawerData}
       />
-    </div>
+    </AnimatedSection>
   );
 };
 
