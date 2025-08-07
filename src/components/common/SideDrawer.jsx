@@ -89,29 +89,29 @@ const SideDrawer = ({ isOpen, onClose, data }) => {
                                 ))}
                             </div>
 
-                        {/* Scroll Buttons */}
-                        <div className="flex justify-center gap-6 py-6 sticky bottom-0 bg-amber-50">
-                            <button
-                            onClick={handleScrollUp}
-                            className="bg-white drop-shadow-lg px-6 py-3 rounded-full"
-                            >
-                            <FaChevronUp />
-                            </button>
-                            <button
-                            onClick={handleScrollDown}
-                            className="bg-white drop-shadow-lg px-6 py-3 rounded-full"
-                            >
-                            <FaChevronDown />
-                            </button>
-                        </div>
+                            {/* Scroll Buttons */}
+                            <div className="flex justify-center gap-6 py-6 sticky bottom-0 bg-amber-50">
+                                <button
+                                    onClick={handleScrollUp}
+                                    className="bg-white drop-shadow-lg px-6 py-3 rounded-full"
+                                >
+                                    <FaChevronUp />
+                                </button>
+                                <button
+                                    onClick={handleScrollDown}
+                                    className="bg-white drop-shadow-lg px-6 py-3 rounded-full"
+                                >
+                                    <FaChevronDown />
+                                </button>
+                            </div>
                         </div>
 
                         {/* Close Button */}
                         <button
-                        onClick={onClose}
-                        className="absolute top-2 -left-4 bg-amber-50 shadow-md w-8 h-8 rounded-full flex items-center justify-center"
+                            onClick={onClose}
+                            className="absolute top-2 -left-4 bg-amber-50 shadow-md w-8 h-8 rounded-full flex items-center justify-center"
                         >
-                        <FaChevronRight />
+                            <FaChevronRight />
                         </button>
                     </motion.div>
                 </>
