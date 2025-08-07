@@ -28,6 +28,7 @@ import HealthCare from './sections/HealthCare';
 import OthetInitiatives from './sections/OthetInitiatives';
 import VisualHeritage from './sections/VisualHeritage';
 import Gallery from './sections/Gallery';
+import Contact from './sections/Contact';
 
 const anchors = [
   'home',
@@ -98,6 +99,7 @@ function App() {
               <OthetInitiatives />
               <VisualHeritage />
               <Gallery />
+              <Contact />
             </ReactFullpage.Wrapper>
           )
         }}
