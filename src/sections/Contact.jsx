@@ -5,10 +5,12 @@ import { FaLinkedinIn, FaYoutube, FaMapMarkerAlt, FaFacebookF  } from "react-ico
 import { MdEmail, MdPhoneInTalk, MdOutlineClose } from "react-icons/md";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
     const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
     const [ openModal, setOpenModal ] = useState(false);
+    const navigate = useNavigate();
     const publicationData = [
         {
             title: 'Harbinger Issue 1',
@@ -113,7 +115,7 @@ const Contact = () => {
                                     <HiOutlineDocumentText className="absolute left-1/2 -translate-x-1/2 -top-4 w-6 md:w-8 h-6 md:h-8 rounded-full bg-white p-1.5 md:p-2 text-blue-600 drop-shadow-lg" />
                                 </div>
                                 <div className='bg-white border border-slate-300 hover:bg-white hover:text-black anim relative font-semibold p-4 md:p-6 px-8 md:px-12 w-11/12 md:w-fit rounded-xl shadow-md'>
-                                    <button>Disclosures</button>
+                                    <a href="/privacy-policy"><button className='cursor-pointer'>Disclosures</button></a>
                                     <AiOutlineInfoCircle  className="absolute left-1/2 -translate-x-1/2 -top-4 w-6 md:w-8 h-6 md:h-8 rounded-full bg-white p-1.5 md:p-2 text-blue-600 drop-shadow-lg" />
                                 </div>
                             </div>
@@ -136,7 +138,7 @@ const Contact = () => {
                                             <a
                                                 target="_blank"
                                                 href={pub.link}
-                                                className='bg-white h-full flex justify-center flex-col items-center shrink break-words drop-shadow-md hover:bg-blue-100 anim w-fit text-sm md:text-lg ring-2 ring-blue-100 rounded-xl px-4 md:px-8 p-2 md:p-4'
+                                                className='bg-white h-full flex justify-center flex-col items-center hover:bg-blue-100 text-sm md:text-lg ring-2 ring-blue-100 rounded-xl md:px-8 p-2 md:p-4'
                                             >
                                                 {pub.title}
                                                 <br/>
