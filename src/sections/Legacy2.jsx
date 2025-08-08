@@ -1,37 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import SideDrawer from '../components/common/SideDrawer';
+import AnimatedSection from '../components/common/AnimatedSection';
 
-const Legacy2 = () => {
-  const bgRef = useRef();
 
-  const handleMouseMove = (e) => {
-    const { clientX, currentTarget } = e;
-    const { width, left } = currentTarget.getBoundingClientRect();
-    const x = clientX - left;
-    const moveX = ((x / width) - 0.5) * 20; // range: -10 to 10
+const drawerData = 
+  {
+    title: 'P. S. Govindaswamy Naidu',
+    image: '/images/trustees/Fpsg.webp',
+    content: [ 
+      'The legacy of the PSG institutions founded by Shri.P.S.Govindaswamy Naidu has been handed down through several generations. Each time the baton was handed down to the successor of the Trust, these golden words, "Let there be charity, so others can share my family’s prosperity" are embedded firmly and hence the Founder’s vision has only grown richer and more profound. Education, one of the most treasured clauses in the Trust deed, attained sharper focus each growing year while each succeeding Head of Trust, carried the dreams of the Founder on their shoulders towards fulfillment of the Vision and the betterment of the Future.',
 
-    if (bgRef.current) {
-      bgRef.current.style.transform = `translateX(${moveX}px)`;
-    }
+    ]
   };
 
-  return (
-    <div
-      className="section relative flex flex-col justify-center items-center text-center h-[100dvh] w-full overflow-hidden"
-      onMouseMove={handleMouseMove}
-    >
-      {/* Background Image with smooth X translation */}
-      <div
-        ref={bgRef}
-        className="absolute inset-0 z-0 transition-transform duration-500 ease-in-out"
-      >
-        <img
-          src="/images/bg2.jpg"
-          alt="Legacy2"
-          loading="lazy"
-          className="w-full h-full object-cover opacity-60"
-        />
-      </div>
+const Legacy2 = () => {
+  const [openDrawer, setOpenDrawer] = useState(false);
 
+  const handleDrawerClick = () => {
+      setOpenDrawer(true);
+  };
+
+
+  return (
+    <AnimatedSection bgImage="/images/bg2.jpg">
       {/* Foreground content */}
       <div className="relative z-10 text-gray-900 px-4">
         <p className="text-md tracking-widest uppercase font-semibold">Chapter 2</p>
@@ -49,7 +40,7 @@ const Legacy2 = () => {
                 <li className='text-sm flex justify-center items-center min-h-[5rem] p-3 rounded-lg bg-white drop-shadow-xl  px-5'>
                     P.S. Narappa Naidu
                 </li>
-                <li className='text-sm flex justify-center items-center min-h-[5rem] cursor-pointer p-3 rounded-lg bg-white drop-shadow-xl  px-5'>
+                <li className='text-sm flex justify-center items-center min-h-[5rem] cursor-pointer p-3 rounded-lg bg-white drop-shadow-xl  px-5' onClick={() => handleDrawerClick()}>
                     P.S. Govindaswamy Naidu
                 </li>
                 <li className='text-sm flex justify-center items-center min-h-[5rem] p-3 rounded-lg bg-white drop-shadow-xl  px-5'>
@@ -61,7 +52,12 @@ const Legacy2 = () => {
             </ul>
         </div>
       </div>
-    </div>
+      <SideDrawer
+        isOpen={openDrawer}
+        onClose={() => setOpenDrawer(false)}
+        data={drawerData}
+      />
+    </AnimatedSection>
   );
 };
 
