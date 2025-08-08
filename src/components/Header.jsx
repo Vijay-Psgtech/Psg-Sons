@@ -59,7 +59,7 @@ const Header = () => {
 
       {/* Desktop Header */}
       <div className='hidden md:flex items-center justify-between px-10 py-2 shadow-md backdrop-blur-xs bg-transparent'>
-        <a href="/" className="flex items-center px-12">
+        <a href="/#home" className="flex items-center px-12">
           <img src="/images/Logo.png" alt="PSG Logo" className='w-16 h-auto object-contain' />
         </a>
         <nav className='flex space-x-16'>

@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { FaChevronLeft, FaChevronRight, FaHandPointRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
+import NavButton from "../components/common/NavButton";
+
 const MileStones = () => {
   const scrollRef = useRef(null);
   const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
@@ -49,18 +51,13 @@ const MileStones = () => {
       <div className="relative z-10 h-full w-full flex items-center justify-between px-8">
         {/* Navigation Buttons */}
         <div className="hidden md:flex shrink-0 gap-4 absolute right-13 bottom-12 z-2">
-          <button
-            onClick={handleScrollLeft}
-            className="w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md"
-          >
-            <FaChevronLeft />
-          </button>
-          <button
-            onClick={handleScrollRight}
-            className="w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md"
-          >
-            <FaChevronRight />
-          </button>
+          <NavButton onClick={handleScrollLeft}>
+              <FaChevronLeft />
+          </NavButton>
+
+          <NavButton onClick={handleScrollRight}>
+              <FaChevronRight />
+          </NavButton>
         </div>
 
         <div style={{ opacity: 1, transform: "translate(-0.46px, -0.02px)" }}>

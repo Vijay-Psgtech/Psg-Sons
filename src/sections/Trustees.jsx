@@ -4,6 +4,7 @@ import { FaChevronRight, FaChevronLeft, FaHandPointRight  } from 'react-icons/fa
 import SideDrawer from '../components/common/SideDrawer';
 import { motion } from "framer-motion";
 import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
+import NavButton from '../components/common/NavButton';
 
 
 const Trustees = () => {
@@ -37,12 +38,13 @@ const Trustees = () => {
       <div className='relative h-[100dvh] overflow-hidden'>
         {/* Scroll Buttons */}
         <div className='hidden md:flex shrink-0 gap-4 absolute right-16 bottom-6 z-20'>
-          <button onClick={handleScrollLeft} className='w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md'>
-            <FaChevronLeft />
-          </button>
-          <button onClick={handleScrollRight} className='w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md'>
-            <FaChevronRight />
-          </button>
+          <NavButton onClick={handleScrollLeft}>
+                <FaChevronLeft />
+            </NavButton>
+
+            <NavButton onClick={handleScrollRight}>
+                <FaChevronRight />
+            </NavButton>
         </div>
 
         {/* Background */}

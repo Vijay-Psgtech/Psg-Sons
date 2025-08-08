@@ -1,8 +1,9 @@
 import React, { useRef, useState } from 'react';
 import { GalleryData } from '../components/content/Content';
-import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import { FaChevronRight, FaChevronLeft, FaHandPointRight } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
+import NavButton from '../components/common/NavButton';
 
 const Gallery = () => {
     const scrollRef = useRef();
@@ -25,13 +26,14 @@ const Gallery = () => {
     return (
         <div className='section h-[100dvh]' onMouseMove={handleMouseMove}>
             <div className='relative h-[100dvh] overflow-hidden'>
-                <div className='flex shrink-0 gap-4 absolute right-16 bottom-12 z-20'>
-                    <button onClick={handleScrollLeft} className='w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md'>
+                <div className='hidden md:flex shrink-0 gap-4 absolute right-16 bottom-12 z-20'>
+                   <NavButton onClick={handleScrollLeft}>
                         <FaChevronLeft />
-                    </button>
-                    <button onClick={handleScrollRight} className='w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md'>
+                    </NavButton>
+
+                    <NavButton onClick={handleScrollRight}>
                         <FaChevronRight />
-                    </button>
+                    </NavButton>
                 </div>
                 <motion.div 
                     style={{ x: translateX }}
@@ -53,11 +55,22 @@ const Gallery = () => {
                         ref={scrollRef} 
                         className='flex overflow-x-auto scroll-smooth space-x-8 px-4 py-8'
                     >
-                        <div className='ml-12 lg:ml-24 flex h-screen justify-center flex-col items-start shrink-0 w-[20rem] md:w-1/4'>
-                            <h1 className='text-5xl font-bold tracking-tight'>Gallery</h1>
-                            <p className='mt-4 lg:mt-6 text-lg w-11/12 mb-36 whitespace-pre-wrap'>
+                        <div className='ml-6 sm:ml-12 lg:ml-24 flex h-screen justify-center flex-col items-start shrink-0 w-[16rem] sm:w-[20rem]'>
+                            <h1 className='text-2xl sm:text-4xl font-bold tracking-tight'>Gallery</h1>
+                            <p className='mt-4 lg:mt-6 text-md sm:text-lg w-11/12 mb-36 whitespace-pre-wrap'>
                                 Here is a visual journey showcasing the vibrant life and achievements of our educational institutions. Throughout its illustrious history, PSG & Sons' Charities has also been honored by the presence of distinguished and eminent personalities.
                             </p>
+                            <div className="md:hidden mb-2 flex flex-col items-center text-lg text-black">
+                                <span className="mb-1">Swipe to Navigate</span>
+                                
+                                <motion.div
+                                    animate={{ x: [0, 10, 0] }}
+                                    transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                                    className="mt-1"
+                                >
+                                    <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
+                                </motion.div>
+                            </div>
                         </div>
                         {GalleryData.map((data, index)=>(
                            <div
