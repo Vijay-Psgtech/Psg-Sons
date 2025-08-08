@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaHandPointRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
 const MileStones = () => {
@@ -48,7 +48,7 @@ const MileStones = () => {
       {/* Content Area */}
       <div className="relative z-10 h-full w-full flex items-center justify-between px-8">
         {/* Navigation Buttons */}
-        <div className="flex shrink-0 gap-4 absolute right-13 bottom-12 z-2">
+        <div className="hidden md:flex shrink-0 gap-4 absolute right-13 bottom-12 z-2">
           <button
             onClick={handleScrollLeft}
             className="w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md"
@@ -68,11 +68,11 @@ const MileStones = () => {
             ref={scrollRef}
             className="flex overflow-x-auto space-x-8 px-4 py-8 justify-start items-center"
           >
-            <div className="ml-12 mt-8 lg:ml-24 flex h-screen justify-center flex-col items-start shrink-0 w-[20rem] md:w-1/4">
-              <h1 className="text-4xl font-bold tracking-tight">
+            <div className="ml-6 sm:ml-12 lg:ml-24 flex h-screen justify-center flex-col items-start shrink-0 w-[20rem] md:w-1/4">
+              <h1 className="text-2xl sm:text-4xl font-bold tracking-tight">
                 PSG Milestones
               </h1>
-              <p className="mt-4 lg:mt-6 text-lg w-11/12 mb-36 shrink-0">
+              <p className="mt-4 lg:mt-6 text-md sm:text-lg w-11/12 mb-36 shrink-0">
                 Here are the notable milestones that have defined the
                 institution over time. From its inception to the present, the
                 college's unwavering commitment to educational excellence has
@@ -80,6 +80,17 @@ const MileStones = () => {
                 testament to the college's enduring dedication to knowledge,
                 growth, and the relentless pursuit of educational excellence.
               </p>
+              <div className="md:hidden mb-2 flex flex-col items-center text-lg text-black">
+                    <span className="mb-1">Swipe to Navigate</span>
+                    
+                    <motion.div
+                        animate={{ x: [0, 10, 0] }}
+                        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                        className="mt-1"
+                    >
+                        <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
+                    </motion.div>
+                </div>
             </div>
             <div className="shrink-0 pr-24 ml-16 flex justify-center items-center">
               <div className="w-4 h-4 shrink-0 rounded-full bg-black"></div>

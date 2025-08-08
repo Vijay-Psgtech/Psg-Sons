@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { TrusteeData } from '../components/content/Content';
-import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import { FaChevronRight, FaChevronLeft, FaHandPointRight  } from 'react-icons/fa';
 import SideDrawer from '../components/common/SideDrawer';
 import { motion } from "framer-motion";
 import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
@@ -36,7 +36,7 @@ const Trustees = () => {
     <div className='section h-[100dvh]' onMouseMove={handleMouseMove}>
       <div className='relative h-[100dvh] overflow-hidden'>
         {/* Scroll Buttons */}
-        <div className='flex shrink-0 gap-4 absolute right-16 bottom-6 z-20'>
+        <div className='hidden md:flex shrink-0 gap-4 absolute right-16 bottom-6 z-20'>
           <button onClick={handleScrollLeft} className='w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md'>
             <FaChevronLeft />
           </button>
@@ -68,12 +68,26 @@ const Trustees = () => {
             ref={scrollRef}
             className='flex overflow-x-auto scroll-smooth space-x-8 px-4 py-8'
           >
-            <div className='ml-12 lg:ml-24 flex h-screen justify-center flex-col items-start shrink-0 w-[20rem] md:w-1/4'>
-              <h1 className='text-4xl font-bold tracking-tight'>Trustees</h1>
-              <p className='mt-4 lg:mt-6 text-lg w-11/12 mb-36 whitespace-pre-wrap'>
+            <div className='ml-6 sm:ml-12 lg:ml-24 flex h-screen justify-center flex-col items-start shrink-0 w-[16rem] sm:w-[20rem]'>
+              <h1 className='text-2xl sm:text-4xl font-bold tracking-tight'>Trustees</h1>
+              <p className='mt-4 lg:mt-6 text-md sm:text-lg w-11/12 mb-36 whitespace-pre-wrap'>
                 The PSG family is blessed with a number of luminaries, men of impressive foresight and impeccable ability. These Managing Trustees inspired PSG & Sons’ Charities to its remarkable achievements.
               </p>
+              
+              <div className="md:hidden mb-2 flex flex-col items-center text-lg text-black">
+                <span className="mb-1">Swipe to Navigate</span>
+                
+                <motion.div
+                  animate={{ x: [0, 10, 0] }}
+                  transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                  className="mt-1"
+                >
+                  <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
+                </motion.div>
+              </div>
+
             </div>
+            
 
             {TrusteeData.map((data, index) => (
               <div
