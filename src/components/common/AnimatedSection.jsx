@@ -31,7 +31,7 @@ const AnimatedSection = ({ bgImage, children }) => {
           src={bgImage}
           alt="Section background"
           loading="lazy"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover opacity-40"
         />
       </motion.div>
 

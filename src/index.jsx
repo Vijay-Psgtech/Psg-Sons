@@ -27,6 +27,7 @@ import Colleges from './sections/Colleges';
 import IndustrialTraining from './sections/IndustrialTraining';
 import HealthCare from './sections/HealthCare';
 import OthetInitiatives from './sections/OthetInitiatives';
+import Chronicles from './sections/Chronicles';
 import VisualHeritage from './sections/VisualHeritage';
 import Gallery from './sections/Gallery';
 import Contact from './sections/Contact';
@@ -53,7 +54,7 @@ const anchors = [
   'industrial-training',
   'health-care',
   'other-initiatives',
-  // 'chronicles-of-excellence',
+  'chronicles-of-excellence',
   // 'alumni',
   // 'alumni.2',
   'visual-heritage',
@@ -100,6 +101,7 @@ function Index() {
               <IndustrialTraining />
               <HealthCare />
               <OthetInitiatives />
+              <Chronicles />
               <VisualHeritage />
               <Gallery />
               <Contact />
