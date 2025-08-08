@@ -29,6 +29,8 @@ import HealthCare from './sections/HealthCare';
 import OthetInitiatives from './sections/OthetInitiatives';
 import Chronicles from './sections/Chronicles';
 import MileStones from './sections/MileStones';
+import Alumni from './sections/Alumni';
+import Alumni2 from './sections/Alumni2';
 import VisualHeritage from './sections/VisualHeritage';
 import Gallery from './sections/Gallery';
 import Contact from './sections/Contact';
@@ -57,8 +59,8 @@ const anchors = [
   'other-initiatives',
   'chronicles-of-excellence',
   'milestones',
-  // 'alumni',
-  // 'alumni.2',
+  'alumni',
+  'alumni.2',
   'visual-heritage',
   'gallery',
   'contact'
@@ -105,6 +107,8 @@ function Index() {
               <OthetInitiatives />
               <Chronicles />
               <MileStones />
+              <Alumni />
+              <Alumni2 />
               <VisualHeritage />
               <Gallery />
               <Contact />
