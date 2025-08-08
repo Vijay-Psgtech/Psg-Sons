@@ -7,6 +7,7 @@ import SideNavbar from './components/SideNavbar';
 
 
 import Home from './sections/Home';
+import Quotes from './sections/Quotes';
 import Genesis from './sections/Genesis';
 import Genesis2 from './sections/Genesis2';
 import Legacy from './sections/Legacy';
@@ -32,6 +33,7 @@ import Contact from './sections/Contact';
 
 const anchors = [
   'home',
+  'quote',
   'genesis',
   'genesis.2',
   'legacy',
@@ -78,6 +80,7 @@ function Index() {
           return(
             <ReactFullpage.Wrapper>
               <Home />
+              <Quotes />
               <Genesis />
               <Genesis2 />
               <Legacy />

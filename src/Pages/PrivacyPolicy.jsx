@@ -86,8 +86,81 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
         <p>
-          Cookies can be "Session" (deleted on close) or "Persistent" (stay until manually deleted).
+         Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser..
         </p>
+        <p>We use both Session and Persistent Cookies for the purposes set out below:</p>
+        <h2 className="text-2xl font-bold mb-4">Cookies Policy</h2>
+      <ul className="list-disc ml-6">
+        <li>
+          <strong>Necessary / Essential Cookies</strong><br />
+          <strong>Type:</strong> Session Cookies<br />
+          <strong>Administered by:</strong> Us<br />
+          <strong>Purpose:</strong> These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided.
+        </li>
+        <li className="mt-2">
+          <strong>Cookies Policy / Notice Acceptance Cookies</strong><br />
+          <strong>Type:</strong> Persistent Cookies<br />
+          <strong>Administered by:</strong> Us<br />
+          <strong>Purpose:</strong> These Cookies identify if users have accepted the use of cookies on the Website.
+        </li>
+        <li className="mt-2">
+          <strong>Functionality Cookies</strong><br />
+          <strong>Type:</strong> Persistent Cookies<br />
+          <strong>Administered by:</strong> Us<br />
+          <strong>Purpose:</strong> These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference.
+        </li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Use of Your Personal Data</h2>
+      <ul className="list-disc ml-6">
+        <li>To provide and maintain our Service, including to monitor the usage of our Service.</li>
+        <li>To manage Your Account and registration as a user of the Service.</li>
+        <li>To fulfill contracts and provide purchased services.</li>
+        <li>To contact You via email, SMS, or phone about services or updates.</li>
+        <li>To respond to support or information requests.</li>
+        <li>To analyze data for reporting or improvement purposes.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Retention of Your Personal Data</h2>
+      <p>
+        The Institution will retain Your Personal Data only as long as necessary to comply with legal obligations, resolve disputes, and enforce policies.
+        Usage Data may be retained for shorter periods unless used for enhancing service security or performance.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Transfer of Your Personal Data</h2>
+      <p>
+        Your Personal Data may be transferred to — and maintained on — computers located outside your state or country. Your submission of such information represents Your agreement to that transfer.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Disclosure of Your Personal Data</h2>
+      <ul className="list-disc ml-6">
+        <li><strong>Law enforcement:</strong> We may disclose data if required by law.</li>
+        <li><strong>Other legal requirements:</strong> To comply with obligations, protect property, investigate wrongdoing, or defend against legal liability.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Security of Your Personal Data</h2>
+      <p>
+        We use commercially acceptable means to protect Your Personal Data but cannot guarantee absolute security.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Links to Other Websites</h2>
+      <p>
+        Our Service may contain links to other sites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Changes to this Privacy Policy</h2>
+      <p>
+        We may update Our Privacy Policy from time to time. We will notify You of any changes via email or a prominent notice on Our Service.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
+      <p>
+        If you have any questions about this Privacy Policy, You can contact us:
+      </p>
+      <ul className="list-disc ml-6">
+        <li>By email: <a href="mailto:charity@psgtech.edu" className="text-blue-600 underline">charity@psgtech.edu</a></li>
+        <li>By mail: P S Govindaswamy Naidu and Sons Charities, Postbox No: 1609, Peelamedu, Avinashi Rd, Coimbatore</li>
+      </ul>
       </div>
     </div>
   );
