@@ -988,11 +988,11 @@ const Alumni2 = () => {
   }, []);
 
   const handleScrollLeft = () => {
-    scrollRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+    scrollRef.current?.scrollBy({ left: -600, behavior: "smooth" });
   };
 
   const handleScrollRight = () => {
-    scrollRef.current?.scrollBy({ left: 300, behavior: "smooth" });
+    scrollRef.current?.scrollBy({ left: 600, behavior: "smooth" });
   };
 
   const currentAlumni = alumniGroups[selectedGroup] || [];

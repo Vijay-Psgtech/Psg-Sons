@@ -20,14 +20,14 @@ const Trustees = () => {
 
   const handleScrollLeft = () => {
     scrollRef.current?.scrollBy({
-      left: -300,
+      left: -600,
       behavior: 'smooth'
     });
   };
 
   const handleScrollRight = () => {
     scrollRef.current?.scrollBy({
-      left: 300,
+      left: 600,
       behavior: 'smooth'
     });
   };
