@@ -9,7 +9,10 @@ const Header = () => {
   const navItems = ['Home', 'Trustees', 'MileStones', 'Alumni', 'Gallery', 'Contact'];
 
   const handleNavigation = (section) => {
-    const sectionId = section.toLowerCase();
+    const idMap = {
+      Alumni: 'alumni.2',
+    };
+    const sectionId = idMap[section] || section.toLowerCase();
     setMenuOpen(false);
 
     if (location.pathname !== '/') {
