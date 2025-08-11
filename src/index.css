@@ -15,3 +15,11 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+/* Paragraphs & other body text */
+p, li, span, div {
+  font-family: 'Merriweather', serif; /* or 'Georgia', serif */
+  font-weight: 400;
+  line-height: 1.5;
+}

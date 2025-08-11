@@ -58,14 +58,19 @@ const Leading = () => {
                         </div>
 
                         {/* Text Content */}
-                        <div className='relative z-10 text-gray-900 px-4'>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, ease: "easeOut" }}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className='relative z-10 text-gray-900 px-4'>
                             <p className='text-md tracking-widest uppercase font-semibold'>Chapter 6</p>
                             <h1 className='text-5xl mt-5 font-bold tracking-tighter w-10/12 lg:w-full text-center mx-auto'>
                                 Visionaries 
                                 <br />
                                 Leading the Way
                             </h1>
-                        </div>
+                        </motion.div>
 
                         {/* Foreground Image (Trustee) */}
                         <img 

@@ -46,7 +46,7 @@ const Quotes = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, ease: "easeOut" }}
                                 viewport={{ once: false, amount: 0.3 }} 
-                                className='font-bold tracking-tighter text-4xl lg:text-7xl mb-8 relative'
+                                className='font-extrabold tracking-tighter text-4xl lg:text-5xl mb-8 relative'
                             >
                                 <img alt="quote" loading="lazy" width={91} height={123} className='bottt h-[10rem] drop-shadow-xl absolute md:-left-36 -left-12 md:-top-12 top-6 hidden md:block' src="/images/quote.svg" />
                                 Let there be{" "}

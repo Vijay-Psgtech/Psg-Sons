@@ -1,6 +1,9 @@
-import React, { useRef, useState } from "react";
-import { FaChevronLeft, FaChevronRight, FaChevronDown } from "react-icons/fa";
-
+import React, { useRef, useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight, FaChevronDown, FaHandPointRight } from "react-icons/fa";
+// import lottie from "lottie-web";
+import NavButton from '../components/common/NavButton';
+import { motion } from "framer-motion";
+import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
 
 import {
   Alum1,
@@ -930,6 +933,59 @@ const Alumni2 = () => {
     "PSG ARTS ALUMNI ASSOCIATION"
   );
   const [showDropdown, setShowDropdown] = useState(false);
+  const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
+    
+  
+
+  // Touch & drag scroll
+  useEffect(() => {
+    const slider = scrollRef.current;
+    if (!slider) return;
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    const startDragging = (e) => {
+      isDown = true;
+      startX = e.pageX || e.touches[0].pageX;
+      scrollLeft = slider.scrollLeft;
+    };
+
+    const stopDragging = () => {
+      isDown = false;
+    };
+
+    const whileDragging = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX || e.touches[0].pageX;
+      const walk = (x - startX) * 1.5; // drag speed
+      slider.scrollLeft = scrollLeft - walk;
+    };
+
+    // Mouse events
+    slider.addEventListener("mousedown", startDragging);
+    slider.addEventListener("mouseleave", stopDragging);
+    slider.addEventListener("mouseup", stopDragging);
+    slider.addEventListener("mousemove", whileDragging);
+
+    // Touch events
+    slider.addEventListener("touchstart", startDragging);
+    slider.addEventListener("touchend", stopDragging);
+    slider.addEventListener("touchmove", whileDragging);
+
+    return () => {
+      slider.removeEventListener("mousedown", startDragging);
+      slider.removeEventListener("mouseleave", stopDragging);
+      slider.removeEventListener("mouseup", stopDragging);
+      slider.removeEventListener("mousemove", whileDragging);
+
+      slider.removeEventListener("touchstart", startDragging);
+      slider.removeEventListener("touchend", stopDragging);
+      slider.removeEventListener("touchmove", whileDragging);
+    };
+  }, []);
 
   const handleScrollLeft = () => {
     scrollRef.current?.scrollBy({ left: -300, behavior: "smooth" });
@@ -942,25 +998,31 @@ const Alumni2 = () => {
   const currentAlumni = alumniGroups[selectedGroup] || [];
 
   return (
-    <div className="section h-screen w-full relative overflow-hidden">
-      <img
+    <div className="section min-h-screen w-full relative overflow-hidden" onMouseMove={handleMouseMove}>
+      <motion.img
+        style={{ x: translateX }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
         src="/images/bg2.webp"
         alt="Alumni Background"
-        loading="lazy"
         className="absolute inset-0 w-full h-full object-cover opacity-60 scale-110"
       />
-      <div className="relative z-10 px-9 py-18 flex flex-col items-center">
-        {/* Dropdown Button */}
-        <div className="relative mb-8">
+
+      <div className="relative z-10 px-4 sm:px-6 md:px-9 py-10 sm:py-42 md:py-30 flex flex-col items-center">
+        
+        {/* Dropdown */}
+        <div className="relative mb-3 w-full max-w-xs sm:max-w-md h-5 py-7">
           <button
-            className="p-3 text-blue-800 text-sm border-b bg-white drop-shadow-lg rounded-lg flex items-center gap-2"
+            className="p-3 text-blue-800 text-sm mx-auto border-b bg-white drop-shadow-lg rounded-lg flex items-center gap-2 w-full justify-between"
             onClick={() => setShowDropdown(!showDropdown)}
           >
             {selectedGroup}
             <FaChevronDown />
           </button>
           {showDropdown && (
-            <div className="absolute top-full mt-2 left-0 bg-white rounded shadow-lg z-50 w-80">
+            <div className="absolute top-full mt-2 left-0 bg-white rounded shadow-lg z-50 w-full sm:w-80">
               {Object.keys(alumniGroups).map((group) => (
                 <div
                   key={group}
@@ -981,51 +1043,49 @@ const Alumni2 = () => {
           )}
         </div>
 
+       
+
+        {/* Alumni Slider */}
         <div className="relative w-full">
-          <div className="absolute right-16 bottom-12 flex gap-6 z-20">
-            <button
-              onClick={handleScrollLeft}
-              className="w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md"
-            >
-              <FaChevronLeft />
-            </button>
-            <button
-              onClick={handleScrollRight}
-              className="w-12 h-12 flex justify-center items-center bg-white rounded-full drop-shadow-md"
-            >
-              <FaChevronRight />
-            </button>
+          {/* Navigation Buttons */}
+          <div className="hidden md:flex shrink-0 gap-4 absolute right-16 bottom-12 z-20">
+            <NavButton onClick={handleScrollLeft}>
+                  <FaChevronLeft />
+              </NavButton>
+
+              <NavButton onClick={handleScrollRight}>
+                  <FaChevronRight />
+              </NavButton>
           </div>
 
+          {/* Alumni Cards */}
           <div
             ref={scrollRef}
-            className="flex gap-8 overflow-x-auto pb-8 pt-4 px-4"
+            className="flex gap-4 sm:gap-6 md:gap-8 overflow-x-hidden scroll-smooth pb-6 sm:pb-8 pt-4 px-2 sm:px-4 cursor-grab active:cursor-grabbing"
           >
             {currentAlumni.map((alum, index) => (
               <div
                 key={index}
-                className="shrink-0 w-64 md:w-78  rounded-lg p-6 text-center"
+                className="shrink-0 w-56 sm:w-64 md:w-72 rounded-lg p-5 sm:p-6 text-center bg-opacity-80 md"
               >
                 <img
                   src={alum.image}
                   alt={alum.name}
-                  loading="lazy"
-                  className="w-full h-78 object-cover  rounded-lg mb-6"
+                  className="w-full h-60 object-cover rounded-lg mb-4 sm:mb-6"
                 />
-                <h1 className="text-xl mt-8 lg:text-2xl w-fit lg:w-10/12 tracking-tighter whitespace-pre-wrap font bold"  style={{opacity:1, transform:"none"}}>{alum.name}</h1>
-                <br />
-                <div className="font-sans mt-1 text-sm" style={{opacity:1, transform:"none;"}}>{alum.role}</div>
-               
-                <p className="mt-2 fonts-sans font-semibold " style={{ opacity:1, transform:"none;"}}>
+                <h1 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-tight whitespace-pre-wrap">
+                  {alum.name}
+                </h1>
+                <div className="font-sans mt-1 text-xs sm:text-sm">{alum.role}</div>
+                <p className="mt-2 font-sans font-semibold text-xs sm:text-sm">
                   {alum.details}
                 </p>
-                
-                <p className="mt-2 fonts-sans font-semibold" style={{ opacity:1, transform:"none;"}}>
+                <p className="mt-2 font-sans font-semibold text-xs sm:text-sm">
                   {alum.description}
                 </p>
                 <a
                   href={`mailto:${alum.email}`}
-                  className=" font-sans mt-4 text-sm underline" style={{opacity:1, transform:"none"}}
+                  className="font-sans mt-4 text-xs sm:text-sm underline block"
                 >
                   {alum.email}
                 </a>
@@ -1033,6 +1093,22 @@ const Alumni2 = () => {
             ))}
           </div>
         </div>
+       
+       
+        {/* Swipe Animation (Mobile Only) */}
+        <div className="md:hidden mb-2 flex flex-col items-center text-lg text-black">
+          <span className="mb-1">Swipe to Navigate</span>
+          <motion.div
+                animate={{ x: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                className="mt-1"
+            >
+                <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
+            </motion.div>
+        </div>
+        
+      
+      
       </div>
     </div>
   );

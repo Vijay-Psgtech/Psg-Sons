@@ -29,7 +29,7 @@ const Rkguest = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, ease: "easeOut" }}
                                 viewport={{ once: false, amount: 0.3 }} 
-                                className='relative font-bold tracking-tighter lg:text-left  text-xl lg:text-4xl whitespace-break-spaces break-words'
+                                className='relative font-bold tracking-tighter lg:text-left  text-xl lg:text-3xl whitespace-break-spaces break-words'
                             >
                                 <img alt="quote" loading="lazy" width={91} height={123} className='bottt h-[10rem] drop-shadow-xl absolute md:-left-36 -left-12 md:-top-12 top-6 hidden md:block' src="/images/quote.svg" />
                                 The Story of the PSG & Sons' Charities is a thrilling one of abiding faith, great piety and noble adventure. The institutions, literary and technological, are a testimony to the foresight of the Founders and their confidence in the future of this country
