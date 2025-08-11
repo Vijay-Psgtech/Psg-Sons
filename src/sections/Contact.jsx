@@ -56,7 +56,7 @@ const Contact = () => {
                             viewport={{ once: false, amount: 0.3 }}
                             className='absolute left-0 top-0 w-full overflow-hidden h-[100dvh]'
                         >
-                            <img src="/images/bg2.jpg" loading="lazy" width="1835" height="1022" className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' alt="visionary" />
+                            <img src="/images/bg2.webp" loading="lazy" width="1835" height="1022" className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' alt="visionary" />
                         </motion.div>
                     </div>
                     <div className='fader z-[9999999999] pointer-events-none w-full h-28 md:h-40 absolute bottom-0 '></div>

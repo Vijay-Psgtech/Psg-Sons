@@ -22,9 +22,9 @@ const Legacy2 = () => {
 
 
   return (
-    <AnimatedSection bgImage="/images/bg2.jpg">
+    <AnimatedSection bgImage="/images/bg2.webp">
       {/* Foreground content */}
-      <div className="relative z-10 text-gray-900 px-4">
+      <div className="relative z-10 text-gray-900 px-4 mt-6">
         <p className="text-md tracking-widest uppercase font-semibold">Chapter 2</p>
         <h1 className="text-2xl md:text-5xl mt-5 font-extrabold tracking-tight w-10/12 lg:w-full text-center mx-auto">
           Sama Naidu 

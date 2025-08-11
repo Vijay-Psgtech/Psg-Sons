@@ -3,7 +3,7 @@ import AnimatedSection from '../components/common/AnimatedSection';
 
 const FifthBrother2 = () => {
   return (
-    <AnimatedSection bgImage="/images/bg2.jpg">
+    <AnimatedSection bgImage="/images/bg2.webp">
       {/* Foreground content */}
       <div className="relative z-10 text-gray-900 px-4">
         <p className="text-md tracking-widest uppercase font-semibold">Chapter 5</p>

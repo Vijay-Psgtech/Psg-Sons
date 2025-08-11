@@ -43,7 +43,7 @@ const MileStones = () => {
                 height="1079"
                 decoding="async"
                 className="absolute top-0 left-0 w-full h-full object-cover opacity-60 scale-110 hover:animate-shake"
-                src="/images/bg2.jpg"
+                src="/images/bg2.webp"
             />
         </motion.div>
 

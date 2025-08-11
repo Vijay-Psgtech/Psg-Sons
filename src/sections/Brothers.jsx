@@ -17,7 +17,7 @@ const Brothers = () => {
                             viewport={{ once: false, amount: 0.3 }}
                             className='absolute left-0 top-0 w-full overflow-hidden h-[100dvh]'
                             >
-                            <img src="/images/bg2.jpg" loading="lazy" width="1905" height="552" className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' alt="Genesis" />
+                            <img src="/images/bg2.webp" loading="lazy" width="1905" height="552" className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' alt="Genesis" />
                         </motion.div>
                     </div>
                     <div className="relative z-10 text-gray-900 px-4">

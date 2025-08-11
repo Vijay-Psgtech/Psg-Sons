@@ -52,7 +52,7 @@ const Leading = () => {
                                     width={1587} 
                                     height={1079} 
                                     className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' 
-                                    src="/images/bg2.jpg" 
+                                    src="/images/bg2.webp" 
                                 />
                             </motion.div>
                         </div>

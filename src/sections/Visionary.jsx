@@ -20,10 +20,15 @@ const Visionary = () => {
                             <img src="/images/bg2.jpg" loading="lazy" width="1835" height="1022" className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' alt="visionary" />
                         </motion.div>
                     </div>
-                    <div className='relative z-10 text-gray-900 px-4'>
+                    <motion.div 
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: false, amount: 0.3 }}
+                        className='relative z-10 text-gray-900 px-4'>
                         <p className='text-md tracking-widest uppercase font-semibold'>Chapter 3</p>
                         <h1 className="text-5xl mt-5 font-bold tracking-tighter w-10/12 lg:w-full text-center mx-auto">The Visionary</h1>
-                    </div>
+                    </motion.div>
                     <img src="/images/founder.jpg" alt="Founder" loading="lazy" width="1000" height="1150" className='absolute w-48 md:w-[20rem] bottom-0 left-8 md:left-24 z-10' />
                 </div>
             </div> 

@@ -944,8 +944,9 @@ const Alumni2 = () => {
   return (
     <div className="section h-screen w-full relative overflow-hidden">
       <img
-        src="/images/bg2.jpg"
+        src="/images/bg2.webp"
         alt="Alumni Background"
+        loading="lazy"
         className="absolute inset-0 w-full h-full object-cover opacity-60 scale-110"
       />
       <div className="relative z-10 px-9 py-18 flex flex-col items-center">
@@ -1008,6 +1009,7 @@ const Alumni2 = () => {
                 <img
                   src={alum.image}
                   alt={alum.name}
+                  loading="lazy"
                   className="w-full h-78 object-cover  rounded-lg mb-6"
                 />
                 <h1 className="text-xl mt-8 lg:text-2xl w-fit lg:w-10/12 tracking-tighter whitespace-pre-wrap font bold"  style={{opacity:1, transform:"none"}}>{alum.name}</h1>
