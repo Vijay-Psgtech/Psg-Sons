@@ -15,7 +15,7 @@ const Home = () => {
                 className="absolute top-0 left-0 w-full h-full overflow-hidden"
             >
                 <img
-                    src="/images/building.png"
+                    src="/images/building.webp"
                     alt="PSG Charity Background"
                     className="w-full h-full object-cover scale-110 opacity-25"
                 />

@@ -9,7 +9,10 @@ const Header = () => {
   const navItems = ['Home', 'Trustees', 'MileStones', 'Alumni', 'Gallery', 'Contact'];
 
   const handleNavigation = (section) => {
-    const sectionId = section.toLowerCase();
+    const idMap = {
+      Alumni: 'alumni.2',
+    };
+    const sectionId = idMap[section] || section.toLowerCase();
     setMenuOpen(false);
 
     if (location.pathname !== '/') {
@@ -73,6 +76,9 @@ const Header = () => {
             </button>
           ))}
         </nav>
+        <a href="/#home" className="flex items-center px-12">
+          <img src="/images/100yearsLogo.png" alt="PSG Logo" className='w-24 h-auto object-contain' />
+        </a>
       </div>
     </header>
   );

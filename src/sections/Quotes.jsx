@@ -35,10 +35,10 @@ const Quotes = () => {
                             viewport={{ once: false, amount: 0.3 }}
                             className='absolute left-0 top-0 w-full overflow-hidden h-[100dvh]'
                         >
-                            <img alt="bg" loading="lazy" width="1587" height="1079" className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' src="/images/bg2.jpg"/>
+                            <img alt="bg" loading="lazy" width="1587" height="1079" className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60' src="/images/bg2.webp"/>
                         </motion.div>
                     </div>
-                    <img alt="founder" loading="lazy" width={430} height={567} className='absolute hover:grayscale h-[25.5rem] transition-all grayscale-0 cursor-pointer w-48 md:w-[22rem] bottom-0 left-0 md:left-24 z-10'src="/images/founder.jpg" onClick={() => handleDrawerClick()} />
+                    <img alt="founder" loading="lazy" width={430} height={567} className='absolute hover:grayscale md:h-[25.5rem] transition-all grayscale-0 cursor-pointer w-48 md:w-[22rem] bottom-0 left-0 md:left-24 z-10'src="/images/founder.jpg" onClick={() => handleDrawerClick()} />
                     <div className='mt-8 overflow-visible w-10/12 my-12 md:w-1/3'>
                         <div className='relative z-10 text-gray-900 px-4'>
                             <motion.div
@@ -46,7 +46,7 @@ const Quotes = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, ease: "easeOut" }}
                                 viewport={{ once: false, amount: 0.3 }} 
-                                className='font-bold tracking-tighter text-4xl lg:text-7xl mb-8 relative'
+                                className='font-extrabold tracking-tighter text-4xl lg:text-5xl mb-8 relative'
                             >
                                 <img alt="quote" loading="lazy" width={91} height={123} className='bottt h-[10rem] drop-shadow-xl absolute md:-left-36 -left-12 md:-top-12 top-6 hidden md:block' src="/images/quote.svg" />
                                 Let there be{" "}

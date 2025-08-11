@@ -11,14 +11,14 @@ const Gallery = () => {
 
     const handleScrollLeft = () => {
         scrollRef.current?.scrollBy({
-        left: -300,
+        left: -600,
         behavior: 'smooth'
         });
     };
 
     const handleScrollRight = () => {
         scrollRef.current?.scrollBy({
-        left: 300,
+        left: 600,
         behavior: 'smooth'
         });
     };
@@ -47,7 +47,7 @@ const Gallery = () => {
                     alt="bg"
                     loading='lazy'
                     className='absolute scale-[110%] top-0 left-0 w-full h-[100dvh] object-cover opacity-60'
-                    src="/images/bg2.jpg"
+                    src="/images/bg2.webp"
                     />
                 </motion.div>
                 <div className='relative z-10 text-gray-900 px-8'>
