@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
+
+/* Custom scrollbar hide */
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* make sure thumb/background cannot show */
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  /* scrollbar-width: none;  */
+}
