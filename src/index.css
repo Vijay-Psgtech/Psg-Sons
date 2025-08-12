@@ -7,6 +7,10 @@
   overflow: hidden;
 } */
 
+body{
+  background-color: #fefff7;
+}
+
 /* Custom scrollbar hide */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
