@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { TrusteeData } from '../components/content/Content';
 import { FaChevronRight, FaChevronLeft, FaHandPointRight  } from 'react-icons/fa';
 import SideDrawer from '../components/common/SideDrawer';
@@ -31,6 +31,22 @@ const Trustees = () => {
       behavior: 'smooth'
     });
   };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash === '#trustees' && scrollRef.current) {
+        scrollRef.current.scrollLeft = 0;
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    handleHashChange();
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
 
   return (
 

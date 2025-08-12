@@ -37,7 +37,7 @@ const SideNavbar = ({ activeSection }) => {
             >
               {/* Dot */}
               <div className={`w-3 h-3 rounded-full transition-all duration-300
-                ${isActive ? 'bg-blue-600 ring-4 ring-orange-500' : 'bg-white/50 hover:bg-white'}
+                ${isActive ? 'bg-blue-600 ring-6 ring-orange-500' : 'bg-white/50 hover:bg-white'}
               `}></div>
 
               {/* Tooltip */}

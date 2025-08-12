@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { GalleryData } from '../components/content/Content';
 import { FaChevronRight, FaChevronLeft, FaHandPointRight } from 'react-icons/fa';
 import { motion } from "framer-motion";
@@ -22,6 +22,20 @@ const Gallery = () => {
         behavior: 'smooth'
         });
     };
+
+    useEffect(()=>{
+        console.log('Gallery');
+        const handleHashChange = () => {
+            if(window.location.hash === '#gallery' && scrollRef.current){
+                scrollRef.current.scrollLeft = 0;
+            }
+        };
+        window.addEventListener('hashchange', handleHashChange);
+        handleHashChange();
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange);
+        }
+    },[]);
 
     return (
         <div className='section h-[100dvh]' onMouseMove={handleMouseMove}>
