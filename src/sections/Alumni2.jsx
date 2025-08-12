@@ -997,6 +997,20 @@ const Alumni2 = () => {
 
   const currentAlumni = alumniGroups[selectedGroup] || [];
 
+  useEffect(()=>{
+    const handleHashChange = () => {
+      if(window.location.hash === '#alumni.2' && scrollRef.current){
+          scrollRef.current.scrollLeft = 0;
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange();
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  },[])
+
   return (
     <div className="section min-h-screen w-full relative overflow-hidden" onMouseMove={handleMouseMove}>
       <motion.img

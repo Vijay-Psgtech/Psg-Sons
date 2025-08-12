@@ -1,4 +1,4 @@
-import React,{ useRef, useState } from 'react';
+import React,{ useEffect, useRef, useState } from 'react';
 import { SchoolData } from '../components/content/Content';
 import { FaChevronRight, FaChevronLeft, FaHandPointRight } from 'react-icons/fa';
 import SideDrawer from '../components/common/SideDrawer';
@@ -32,6 +32,22 @@ const Schools = () => {
         behavior: 'smooth'
         });
     };
+
+    useEffect(() => {
+        const handleHashChange = () => {
+          if (window.location.hash === '#schools' && scrollRef.current) {
+            scrollRef.current.scrollLeft = 0;
+          }
+        };
+    
+        window.addEventListener('hashchange', handleHashChange);
+    
+        handleHashChange();
+    
+        return () => {
+          window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, []);
 
     return (
         <div className='section h-[100dvh]' onMouseMove={handleMouseMove}>

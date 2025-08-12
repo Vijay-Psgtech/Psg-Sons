@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight, FaHandPointRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
@@ -21,6 +21,20 @@ const MileStones = () => {
       behavior: "smooth",
     });
   };
+
+  useEffect(()=>{
+    const handleHashChange = () => {
+        if(window.location.hash === '#milestones' && scrollRef.current){
+            scrollRef.current.scrollLeft = 0;
+        }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange();
+
+    return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+    };
+  },[]);
 
   return (
     <div
