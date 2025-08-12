@@ -30,7 +30,7 @@ const Home = () => {
                 >
                     'PSG & Sons' Charities'
                 </motion.h1>
-                <p className="text-xs md:text-sm text-black/60 mt-3 md:mt-6 font-semibold uppercase tracking-widest">
+                <p className="text-xs md:text-sm text-black/90 mt-3 md:mt-6 font-semibold uppercase tracking-widest">
                     The Story of the Fifth Brother
                 </p>
             </div>
