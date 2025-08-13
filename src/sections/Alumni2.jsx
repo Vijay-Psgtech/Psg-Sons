@@ -1,9 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
-import { FaChevronLeft, FaChevronRight, FaChevronDown, FaHandPointRight } from "react-icons/fa";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  FaChevronDown,
+  FaHandPointRight,
+} from "react-icons/fa";
 // import lottie from "lottie-web";
-import NavButton from '../components/common/NavButton';
+import NavButton from "../components/common/NavButton";
 import { motion } from "framer-motion";
-import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
+import { useParallaxBackground } from "../components/hooks/useParallaxBackground";
 
 import {
   Alum1,
@@ -95,7 +100,7 @@ import {
   Alum87,
   Alum88,
   Alum89,
-  Alum90
+  Alum90,
 } from "../assets/alumniImages";
 
 const alumniGroups = {
@@ -596,7 +601,6 @@ const alumniGroups = {
   ],
 
   "PSG COLLEGE OF NURSING ALUMNI ASSOCIATION": [
-
     {
       image: Alum1,
       name: "Shri. L. Gopalakrishnan",
@@ -647,15 +651,15 @@ const alumniGroups = {
     },
   ],
   "PSG COLLEGE OF PHYSIOTHERAPY ALUMNI ASSOCIATION": [
-
-{
+    {
       image: Alum57,
       name: "Prof. Mahesh R",
       role: "President",
       details: "Principal",
       description: "PSG College of Physiotherapy ",
       email: "",
-    },{
+    },
+    {
       image: Alum58,
       name: "Prof. Y.Ashraf",
       role: "Vice President",
@@ -663,57 +667,64 @@ const alumniGroups = {
       description: " PSG College of Physiotherapy",
       email: "",
     },
-    
-  {
+
+    {
       image: Alum59,
       name: "Parthiban A",
       role: "Secretary",
       details: "(2005 Batch)",
       description: " ",
       email: "",
-    },{
+    },
+    {
       image: Alum60,
       name: "Nagul T",
       role: "Vice Secretary",
       details: "(2015 Batch)",
       description: " ",
       email: "",
-    },{
+    },
+    {
       image: Alum61,
       name: "Sathiyamoorthi P",
       role: "Treasurer",
       details: "(2002 Batch)",
       description: " ",
       email: "",
-    },{
+    },
+    {
       image: Alum62,
       name: "Murali G",
       role: "Executive Members",
       details: "(1999 Batch)",
       description: " ",
       email: "",
-    },{
+    },
+    {
       image: Alum63,
       name: "Iyyappan S",
       role: "Executive Members",
       details: "(2002 Batch)",
       description: " ",
       email: "",
-    },{
+    },
+    {
       image: Alum64,
       name: "Nivedita L",
       role: "Executive Members",
       details: "(2009 Batch)",
       description: " ",
       email: "",
-    },{
+    },
+    {
       image: Alum65,
       name: "Arul U",
       role: "Executive Members",
       details: "(2011 Batch)",
       description: " ",
       email: "",
-    },{
+    },
+    {
       image: Alum66,
       name: "Aswin S",
       role: "Executive Members",
@@ -721,7 +732,7 @@ const alumniGroups = {
       description: " ",
       email: "",
     },
-    
+
     {
       image: Alum67,
       name: "Anuvalliyammai AL",
@@ -730,11 +741,9 @@ const alumniGroups = {
       description: " ",
       email: "",
     },
-
   ],
   "PSG COLLEGE OF PHARMACY ALUMNI ASSOCIATION": [
-
-{
+    {
       image: Alum68,
       name: "DR.M.RAMANATHAN",
       role: "PRESIDENT",
@@ -830,11 +839,8 @@ const alumniGroups = {
       description: " PROPERITER BAWA MEDICALS, COIMBATORE ",
       email: "",
     },
-
-
   ],
   "PSG SARVAJANA ALUMNI ASSOCIATION": [
-
     {
       image: Alum80,
       name: "Mr.P.NARAYANASWAMI",
@@ -867,7 +873,7 @@ const alumniGroups = {
       description: "",
       email: "",
     },
-    
+
     {
       image: Alum84,
       name: "Mr.K.SAMATHANA PRABHU",
@@ -934,8 +940,6 @@ const Alumni2 = () => {
   );
   const [showDropdown, setShowDropdown] = useState(false);
   const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
-    
-  
 
   // Touch & drag scroll
   useEffect(() => {
@@ -997,22 +1001,25 @@ const Alumni2 = () => {
 
   const currentAlumni = alumniGroups[selectedGroup] || [];
 
-  useEffect(()=>{
+  useEffect(() => {
     const handleHashChange = () => {
-      if(window.location.hash === '#alumni.2' && scrollRef.current){
-          scrollRef.current.scrollLeft = 0;
+      if (window.location.hash === "#alumni.2" && scrollRef.current) {
+        scrollRef.current.scrollLeft = 0;
       }
     };
-    window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
     handleHashChange();
 
     return () => {
-      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener("hashchange", handleHashChange);
     };
-  },[])
+  }, []);
 
   return (
-    <div className="section min-h-screen w-full relative overflow-hidden" onMouseMove={handleMouseMove}>
+    <div
+      className="section min-h-screen w-full relative overflow-hidden"
+      onMouseMove={handleMouseMove}
+    >
       <motion.img
         style={{ x: translateX }}
         initial={{ opacity: 0 }}
@@ -1025,7 +1032,6 @@ const Alumni2 = () => {
       />
 
       <div className="relative z-10 px-4 sm:px-6 md:px-9 py-10 sm:py-42 md:py-30 flex flex-col items-center">
-        
         {/* Dropdown */}
         <div className="relative mb-3 w-full max-w-xs sm:max-w-md h-5 py-7">
           <button
@@ -1057,19 +1063,17 @@ const Alumni2 = () => {
           )}
         </div>
 
-       
-
         {/* Alumni Slider */}
         <div className="relative w-full">
           {/* Navigation Buttons */}
           <div className="hidden md:flex shrink-0 gap-4 absolute right-16 bottom-12 z-20">
             <NavButton onClick={handleScrollLeft}>
-                  <FaChevronLeft />
-              </NavButton>
+              <FaChevronLeft />
+            </NavButton>
 
-              <NavButton onClick={handleScrollRight}>
-                  <FaChevronRight />
-              </NavButton>
+            <NavButton onClick={handleScrollRight}>
+              <FaChevronRight />
+            </NavButton>
           </div>
 
           {/* Alumni Cards */}
@@ -1090,7 +1094,9 @@ const Alumni2 = () => {
                 <h1 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-tight whitespace-pre-wrap">
                   {alum.name}
                 </h1>
-                <div className="font-sans mt-1 text-xs sm:text-sm">{alum.role}</div>
+                <div className="font-sans mt-1 text-xs sm:text-sm">
+                  {alum.role}
+                </div>
                 <p className="mt-2 font-sans font-semibold text-xs sm:text-sm">
                   {alum.details}
                 </p>
@@ -1107,22 +1113,18 @@ const Alumni2 = () => {
             ))}
           </div>
         </div>
-       
-       
+
         {/* Swipe Animation (Mobile Only) */}
         <div className="md:hidden mb-2 flex flex-col items-center text-lg text-black">
           <span className="mb-1">Swipe to Navigate</span>
           <motion.div
-                animate={{ x: [0, 10, 0] }}
-                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                className="mt-1"
-            >
-                <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
-            </motion.div>
+            animate={{ x: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+            className="mt-1"
+          >
+            <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
+          </motion.div>
         </div>
-        
-      
-      
       </div>
     </div>
   );

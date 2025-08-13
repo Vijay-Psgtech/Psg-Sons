@@ -9,7 +9,7 @@ const AnimatedSection = ({ bgImage, children }) => {
     const { clientX, currentTarget } = e;
     const { width, left } = currentTarget.getBoundingClientRect();
     const relativeX = clientX - left;
-    const move = ((relativeX / width) - 0.5) * 600; // adjust sensitivity
+    const move = (relativeX / width - 0.5) * 600; // adjust sensitivity
     x.set(move);
   };
 

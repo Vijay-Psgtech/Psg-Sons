@@ -1,7 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import { FaChevronLeft, FaChevronRight, FaHandPointRight } from "react-icons/fa";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  FaHandPointRight,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useParallaxBackground } from '../components/hooks/useParallaxBackground';
+import { useParallaxBackground } from "../components/hooks/useParallaxBackground";
 import NavButton from "../components/common/NavButton";
 
 const MileStones = () => {
@@ -22,19 +26,19 @@ const MileStones = () => {
     });
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     const handleHashChange = () => {
-        if(window.location.hash === '#milestones' && scrollRef.current){
-            scrollRef.current.scrollLeft = 0;
-        }
+      if (window.location.hash === "#milestones" && scrollRef.current) {
+        scrollRef.current.scrollLeft = 0;
+      }
     };
-    window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
     handleHashChange();
 
     return () => {
-        window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener("hashchange", handleHashChange);
     };
-  },[]);
+  }, []);
 
   return (
     <div
@@ -42,35 +46,35 @@ const MileStones = () => {
       onMouseMove={handleMouseMove}
     >
       {/* Background Image */}
-      <motion.div 
-            style={{ x: translateX }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.3 }} 
-            className="absolute inset-0 z-0"
-        >
-            <img
-                alt="Timeline Background"
-                loading="lazy"
-                width="1587"
-                height="1079"
-                decoding="async"
-                className="absolute top-0 left-0 w-full h-full object-cover opacity-60 scale-110 hover:animate-shake"
-                src="/images/bg2.webp"
-            />
-        </motion.div>
+      <motion.div
+        style={{ x: translateX }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
+        className="absolute inset-0 z-0"
+      >
+        <img
+          alt="Timeline Background"
+          loading="lazy"
+          width="1587"
+          height="1079"
+          decoding="async"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-60 scale-110 hover:animate-shake"
+          src="/images/bg2.webp"
+        />
+      </motion.div>
 
       {/* Content Area */}
       <div className="relative z-10 h-full w-full flex items-center justify-between px-8">
         {/* Navigation Buttons */}
         <div className="hidden md:flex shrink-0 gap-4 absolute right-13 bottom-12 z-2">
           <NavButton onClick={handleScrollLeft}>
-              <FaChevronLeft />
+            <FaChevronLeft />
           </NavButton>
 
           <NavButton onClick={handleScrollRight}>
-              <FaChevronRight />
+            <FaChevronRight />
           </NavButton>
         </div>
 
@@ -92,16 +96,20 @@ const MileStones = () => {
                 growth, and the relentless pursuit of educational excellence.
               </p>
               <div className="md:hidden mb-2 flex flex-col items-center text-lg text-black">
-                    <span className="mb-1">Swipe to Navigate</span>
-                    
-                    <motion.div
-                        animate={{ x: [0, 10, 0] }}
-                        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                        className="mt-1"
-                    >
-                        <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
-                    </motion.div>
-                </div>
+                <span className="mb-1">Swipe to Navigate</span>
+
+                <motion.div
+                  animate={{ x: [0, 10, 0] }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 1.5,
+                    ease: "easeInOut",
+                  }}
+                  className="mt-1"
+                >
+                  <FaHandPointRight className="text-xl w-6 h-6 text-indigo-500" />
+                </motion.div>
+              </div>
             </div>
             <div className="shrink-0 pr-24 ml-16 flex justify-center items-center">
               <div className="w-4 h-4 shrink-0 rounded-full bg-black"></div>
