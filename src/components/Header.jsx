@@ -87,13 +87,13 @@ const Header = () => {
             </button>
           ))}
         </nav>
-        <a href="/#home" className="flex items-center px-12">
+        <div className="flex items-center px-12 cursor-pointer">
           <img
             src="/images/100yearsLogo.png"
             alt="PSG Logo"
             className="w-24 h-auto object-contain"
           />
-        </a>
+        </div>
       </div>
     </header>
   );
