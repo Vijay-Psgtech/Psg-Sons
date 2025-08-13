@@ -16,7 +16,7 @@ import Brothers from "./sections/Brothers";
 import Brothers2 from "./sections/Brothers2";
 import FifthBrother from "./sections/FifthBrother";
 import FifthBrother2 from "./sections/FifthBrother2";
-import Rkguest from "./sections/rkguest";
+import Rkguest from "./sections/Rkguest";
 import Leading from "./sections/Leading";
 import Trustees from "./sections/Trustees";
 import Education from "./sections/Education";
