@@ -11,9 +11,9 @@ export const useParallaxBackground = (rangeX = 30) => {
     const { clientX, currentTarget } = e;
     const { width, left } = currentTarget.getBoundingClientRect();
     const relativeX = clientX - left;
-    const move = ((relativeX / width) - 0.5) * 600; // adjust sensitivity
+    const move = (relativeX / width - 0.5) * 600; // adjust sensitivity
     x.set(move);
   };
 
-  return { handleMouseMove, translateX};
+  return { handleMouseMove, translateX };
 };
