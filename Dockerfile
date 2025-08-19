@@ -1,6 +1,5 @@
-FROM node:23-alpine
-
-# Set working directory
+# Step 1: Build the React app
+FROM node:23-alpine AS build
 WORKDIR /app
 
 # Install dependencies
@@ -10,8 +9,20 @@ RUN npm install
 # Copy application files
 COPY . .
 
-# Expose your dev server port (adjust if different)
-EXPOSE 5173
+# Build for production
+RUN npm run build
 
-# Start app in dev mode
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+# Step 2: Serve with Nginx
+FROM nginx:alpine
+
+# Remove default Nginx static files
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy build output to Nginx
+COPY --from=build /app/dist /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
