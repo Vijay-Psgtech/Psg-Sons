@@ -13,12 +13,21 @@ const Header = () => {
     "MileStones",
     "Alumni",
     "Gallery",
+    "Careers",
     "Contact",
   ];
 
   const handleNavigation = (section) => {
+    
+    if(section === "Careers") {
+      window.open("https://careers.psginstitutions.in", "_blank");   
+      setMenuOpen(false);
+      return;
+    } 
+
     const idMap = {
       Alumni: "alumni.2",
+       
     };
     const sectionId = idMap[section] || section.toLowerCase();
     setMenuOpen(false);
