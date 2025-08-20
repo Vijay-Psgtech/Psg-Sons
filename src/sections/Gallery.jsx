@@ -114,12 +114,6 @@ const Gallery = () => {
                   }`}
                 >
                   <div className="w-full md:w-[24rem]">
-                    <h1 className="text-xl md:text-3xl font-semibold">
-                      {data.title}
-                    </h1>
-                    <p className="md:text-xl font-medium tracking-tight">
-                      {data.desc}
-                    </p>
                     <p className="mt-2 text-sm md:text-base line-clamp-3 md:line-clamp-5">
                       {data.content}
                     </p>
