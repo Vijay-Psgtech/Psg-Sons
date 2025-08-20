@@ -6,6 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    allowedHosts: ["psgsonscharities.org", "localhost"],
+    allowedHosts: ["psgsonscharities.org", "www.psgsonscharities.org", "localhost"],
   },
 });
