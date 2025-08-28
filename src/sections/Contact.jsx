@@ -11,6 +11,7 @@ import { MdEmail, MdPhoneInTalk, MdOutlineClose } from "react-icons/md";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import { title } from "framer-motion/client";
 
 const Contact = () => {
   const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
@@ -46,6 +47,11 @@ const Contact = () => {
       title: "PSG Tech Coffee Table",
       link: "https://flipbookpdf.net/web/site/943016ef258f2eff5c15cb3553feb5d36f51c751FBP19494842.pdf.html",
       date: "",
+    },
+    {
+      title: "Harbinger Issue 1",
+      link: "https://www.flipbookpdf.net/web/site/b5a6780cdedab76b8c6b69a78a7478fcf0bc5de6FBP36518121.pdf.html",
+      date: "Jan - Mar 2025",
     },
   ];
   return (
@@ -160,7 +166,7 @@ const Contact = () => {
                 <h1 className="-mt-8 text- font-semibold tracking-tighter text-center text-3xl">
                   Publications
                 </h1>
-                <div className="mt-8 gap-8 w-full md:w-4/6 lg:w-1/2 justify-center grid grid-cols-2 items-start">
+                <div className="mt-8 gap-8 w-full md:w-4/6 justify-center grid grid-cols-2 md:grid-cols-3 items-start">
                   {publicationData.map((pub, idx) => (
                     <div key={idx}>
                       <a
