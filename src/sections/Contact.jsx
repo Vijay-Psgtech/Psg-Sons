@@ -168,7 +168,7 @@ const Contact = () => {
                 </h1>
                 <div className="mt-8 gap-8 w-full md:w-4/6 justify-center grid grid-cols-2 md:grid-cols-3 items-start">
                   {publicationData.map((pub, idx) => (
-                    <div key={idx}>
+                    <div key={pub.title} className="w-full h-full">
                       <a
                         target="_blank"
                         href={pub.link}
