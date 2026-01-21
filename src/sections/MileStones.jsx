@@ -2377,6 +2377,36 @@ const MileStones = () => {
                       Centenary celebration of PSG Sarvajana High School
                     </p>
                   </div>
+
+                  <div
+                    className="w-[20rem] mb-[3px] h-fit relative pb-8 border-l-black px-8 border-l-2"
+                    style={{
+                      transform: "translateY(0px)",
+                      paddingTop: "2rem",
+                      borderBottom: "none",
+                      borderTop: "2px solid black",
+                    }}
+                  >
+                    <div className=" bottom-0  absolute -translate-x-1/2 rounded-full p-1.5 ring-white ring-4 drop-shadow-md bg-red-800 left-0"></div>
+                    <h1
+                      className="text-4xl w-fit tracking-tighter font-bold"
+                      style={{
+                        opacity: 1,
+                        transform: "translateX(50px) translateZ(0px)",
+                      }}
+                    >
+                      2025
+                    </h1>
+                    <p
+                      className="mt-4"
+                      style={{
+                        opacity: 1,
+                        transform: "translateX(50px) translateZ(0px)",
+                      }}
+                    >
+                      PSG GRD Museum of science and technology
+                    </p>
+                  </div> 
                   <div className="px-16"></div>
                 </div>
               </div>
