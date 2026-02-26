@@ -205,7 +205,7 @@ export const SchoolData = [
     content: [
       "Rooted in the 100-year educational heritage of PSG Institutions, PSG World School blends tradition with innovation. Our authorization as an IB World School ensures every learner experiences globally benchmarked education aligned with the International Baccalaureate philosophy.",
     ],
-  }
+  },
 ];
 
 export const CollegeData = [
@@ -716,5 +716,43 @@ export const GalleryData = [
     content: [
       "Dr. G.R. Damodaran, Founder Principal, PSG Arts College with his successor Shri. B.R. Krishnamurthy.",
     ],
+  },
+];
+
+export const publicationData = [
+  {
+    title: "Harbinger Issue 1",
+    link: "https://www.flipbookpdf.net/web/site/b9b9eb93de29ff711a66751051427802ed0ef45cFBP19494842.pdf.html",
+    date: "Jan – Mar 2024",
+  },
+  {
+    title: "Harbinger Issue 2",
+    link: "https://www.flipbookpdf.net/web/site/cc505b6c2ab687f08688266d32e1ad3f437c1379FBP19494842.pdf.html",
+    date: "Apr - June 2024",
+  },
+  {
+    title: "Harbinger Issue 3",
+    link: "https://www.flipbookpdf.net/web/site/2d17846c72696cab2b5cffab5a0ec98bfbc611dfFBP19494842.pdf.html",
+    date: "Jul - Sept 2024",
+  },
+  {
+    title: "Harbinger Issue 4",
+    link: "https://www.flipbookpdf.net/web/site/2db46cf90925ca81a8d06c84b07b2de5374171a8FBP19494842.pdf.html",
+    date: "Oct - Dec 2024",
+  },
+  {
+    title: "The Fifth Brother",
+    link: "https://www.flipbookpdf.net/web/site/64930f11c0745e4c0c6db77aca313aba2201884fFBP19494842.pdf.html",
+    date: "",
+  },
+  {
+    title: "PSG Tech Coffee Table",
+    link: "https://flipbookpdf.net/web/site/943016ef258f2eff5c15cb3553feb5d36f51c751FBP19494842.pdf.html",
+    date: "",
+  },
+  {
+    title: "Harbinger Issue 1",
+    link: "https://www.flipbookpdf.net/web/site/b5a6780cdedab76b8c6b69a78a7478fcf0bc5de6FBP36518121.pdf.html",
+    date: "Jan - Mar 2025",
   },
 ];
