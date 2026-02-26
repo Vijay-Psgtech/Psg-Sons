@@ -1,17 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import { OtherIntData } from "../components/content/Content";
-import {
-  FaChevronRight,
-  FaChevronLeft,
-  FaHandPointRight,
-} from "react-icons/fa";
+import { FaHandPointRight } from "react-icons/fa";
 import SideDrawer from "../components/common/SideDrawer";
 import { motion } from "framer-motion";
 import { useParallaxBackground } from "../components/hooks/useParallaxBackground";
 import NavButton from "../components/common/NavButton";
+import ScrollNavigationBar from "../components/common/ScrollNavigationBar";
+import { useScrollNavigation } from "../components/hooks/useScrollNavigation";
 
 const OthetInitiatives = () => {
-  const scrollRef = useRef();
+  const { scrollRef } = useScrollNavigation(600);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [otherIntData, setOtherIntData] = useState({});
   const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
@@ -19,20 +17,6 @@ const OthetInitiatives = () => {
   const handleModalClick = (data) => {
     setOpenDrawer(true);
     setOtherIntData(data);
-  };
-
-  const handleScrollLeft = () => {
-    scrollRef.current?.scrollBy({
-      left: -600,
-      behavior: "smooth",
-    });
-  };
-
-  const handleScrollRight = () => {
-    scrollRef.current?.scrollBy({
-      left: 600,
-      behavior: "smooth",
-    });
   };
 
   useEffect(() => {
@@ -52,15 +36,8 @@ const OthetInitiatives = () => {
   return (
     <div className="section h-[100dvh]" onMouseMove={handleMouseMove}>
       <div className="relative h-[100dvh] overflow-hidden">
-        <div className="hidden md:flex shrink-0 gap-4 absolute right-16 bottom-12 z-20">
-          <NavButton onClick={handleScrollLeft}>
-            <FaChevronLeft />
-          </NavButton>
-
-          <NavButton onClick={handleScrollRight}>
-            <FaChevronRight />
-          </NavButton>
-        </div>
+        {/* Scroll Buttons */}
+        <ScrollNavigationBar scrollRef={scrollRef} scrollDistance={600} />
         <motion.div
           style={{ x: translateX }}
           initial={{ opacity: 0 }}

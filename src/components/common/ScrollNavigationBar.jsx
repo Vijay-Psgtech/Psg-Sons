@@ -43,13 +43,19 @@ const ScrollNavigationBar = ({
 
   const scrollToStart = useCallback(() => {
     if (scrollRef?.current) {
-      scrollRef.current.scrollLeft = 0;
+      scrollRef?.current?.scrollBy({
+      left: -scrollRef.current.scrollLeft,
+      behavior: "smooth",
+    });
     }
   }, [scrollRef]);
 
   const scrollToEnd = useCallback(() => {
     if (scrollRef?.current) {
-      scrollRef.current.scrollLeft = scrollRef.current.scrollWidth;
+      scrollRef.current.scrollBy({
+        left: scrollRef.current.scrollWidth,
+        behavior: "smooth",
+      });
     }
   }, [scrollRef]);
 
