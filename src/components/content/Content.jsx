@@ -198,6 +198,14 @@ export const SchoolData = [
       "This educational institution focuses on shaping young minds during their most formative years. By embracing a comprehensive educational philosophy it provides elementary school students with a unique and enriching learning journey.",
     ],
   },
+  {
+    title: "PSG World School (2026)",
+    image: "images/schools/ws.png",
+    website: "https://psgworldschool.edu.in/",
+    content: [
+      "Rooted in the 100-year educational heritage of PSG Institutions, PSG World School blends tradition with innovation. Our authorization as an IB World School ensures every learner experiences globally benchmarked education aligned with the International Baccalaureate philosophy.",
+    ],
+  }
 ];
 
 export const CollegeData = [
