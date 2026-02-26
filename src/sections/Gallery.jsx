@@ -1,31 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GalleryData } from "../components/content/Content";
-import {
-  FaChevronRight,
-  FaChevronLeft,
-  FaHandPointRight,
-} from "react-icons/fa";
+import { FaHandPointRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useParallaxBackground } from "../components/hooks/useParallaxBackground";
-import NavButton from "../components/common/NavButton";
+import ScrollNavigationBar from "../components/common/ScrollNavigationBar";
+import { useScrollNavigation } from "../components/hooks/useScrollNavigation";
 
 const Gallery = () => {
-  const scrollRef = useRef();
+  const { scrollRef } = useScrollNavigation(600);
   const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
-
-  const handleScrollLeft = () => {
-    scrollRef.current?.scrollBy({
-      left: -600,
-      behavior: "smooth",
-    });
-  };
-
-  const handleScrollRight = () => {
-    scrollRef.current?.scrollBy({
-      left: 600,
-      behavior: "smooth",
-    });
-  };
 
   useEffect(() => {
     console.log("Gallery");
@@ -44,15 +27,7 @@ const Gallery = () => {
   return (
     <div className="section h-[100dvh]" onMouseMove={handleMouseMove}>
       <div className="relative h-[100dvh] overflow-hidden">
-        <div className="hidden md:flex shrink-0 gap-4 absolute right-16 bottom-12 z-20">
-          <NavButton onClick={handleScrollLeft}>
-            <FaChevronLeft />
-          </NavButton>
-
-          <NavButton onClick={handleScrollRight}>
-            <FaChevronRight />
-          </NavButton>
-        </div>
+        <ScrollNavigationBar scrollRef={scrollRef} scrollDistance={600} />
         <motion.div
           style={{ x: translateX }}
           initial={{ opacity: 0 }}

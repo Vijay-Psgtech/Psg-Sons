@@ -1,30 +1,13 @@
 import React, { useEffect, useRef } from "react";
-import {
-  FaChevronLeft,
-  FaChevronRight,
-  FaHandPointRight,
-} from "react-icons/fa";
+import { FaHandPointRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useParallaxBackground } from "../components/hooks/useParallaxBackground";
-import NavButton from "../components/common/NavButton";
+import ScrollNavigationBar from "../components/common/ScrollNavigationBar";
+import { useScrollNavigation } from "../components/hooks/useScrollNavigation";
 
 const MileStones = () => {
-  const scrollRef = useRef(null);
+  const { scrollRef } = useScrollNavigation(600);
   const { handleMouseMove, translateX } = useParallaxBackground(20, 80);
-
-  const handleScrollLeft = () => {
-    scrollRef.current?.scrollBy({
-      left: -600,
-      behavior: "smooth",
-    });
-  };
-
-  const handleScrollRight = () => {
-    scrollRef.current?.scrollBy({
-      left: 600,
-      behavior: "smooth",
-    });
-  };
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -68,15 +51,7 @@ const MileStones = () => {
       {/* Content Area */}
       <div className="relative z-10 h-full w-full flex items-center justify-between px-8">
         {/* Navigation Buttons */}
-        <div className="hidden md:flex shrink-0 gap-4 absolute right-13 bottom-12 z-2">
-          <NavButton onClick={handleScrollLeft}>
-            <FaChevronLeft />
-          </NavButton>
-
-          <NavButton onClick={handleScrollRight}>
-            <FaChevronRight />
-          </NavButton>
-        </div>
+        <ScrollNavigationBar scrollRef={scrollRef} scrollDistance={600} />
 
         <div style={{ opacity: 1, transform: "translate(-0.46px, -0.02px)" }}>
           <div

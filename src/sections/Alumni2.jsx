@@ -1,14 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
-import {
-  FaChevronLeft,
-  FaChevronRight,
-  FaChevronDown,
-  FaHandPointRight,
-} from "react-icons/fa";
-// import lottie from "lottie-web";
+import { FaChevronDown, FaHandPointRight } from "react-icons/fa";
 import NavButton from "../components/common/NavButton";
 import { motion } from "framer-motion";
 import { useParallaxBackground } from "../components/hooks/useParallaxBackground";
+import ScrollNavigationBar from "../components/common/ScrollNavigationBar";
+import { useScrollNavigation } from "../components/hooks/useScrollNavigation";
 
 import {
   Alum1,
@@ -934,7 +930,7 @@ const alumniGroups = {
 };
 
 const Alumni2 = () => {
-  const scrollRef = useRef(null);
+  const { scrollRef } = useScrollNavigation(600);
   const [selectedGroup, setSelectedGroup] = useState(
     "PSG ARTS ALUMNI ASSOCIATION"
   );
@@ -990,14 +986,6 @@ const Alumni2 = () => {
       slider.removeEventListener("touchmove", whileDragging);
     };
   }, []);
-
-  const handleScrollLeft = () => {
-    scrollRef.current?.scrollBy({ left: -600, behavior: "smooth" });
-  };
-
-  const handleScrollRight = () => {
-    scrollRef.current?.scrollBy({ left: 600, behavior: "smooth" });
-  };
 
   const currentAlumni = alumniGroups[selectedGroup] || [];
 
@@ -1066,15 +1054,7 @@ const Alumni2 = () => {
         {/* Alumni Slider */}
         <div className="relative w-full">
           {/* Navigation Buttons */}
-          <div className="hidden md:flex shrink-0 gap-4 absolute right-16 bottom-12 z-20">
-            <NavButton onClick={handleScrollLeft}>
-              <FaChevronLeft />
-            </NavButton>
-
-            <NavButton onClick={handleScrollRight}>
-              <FaChevronRight />
-            </NavButton>
-          </div>
+          <ScrollNavigationBar scrollRef={scrollRef} scrollDistance={600} />
 
           {/* Alumni Cards */}
           <div
