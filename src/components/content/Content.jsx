@@ -434,6 +434,284 @@ export const OtherIntData = [
   },
 ];
 
+export const milestones = [
+  {
+    year: "1711",
+    text: "After a long journey from their native land, Shri. Ganga Naidu along with his family founded the settlement, Poolaimedu, named after the Mound of Poolai flowers in the region.",
+  },
+  {
+    year: "1920",
+    text: "For the maintenance of the modern equipment they used in their agricultural farms, the family set up a workshop at Papanaickenpalayam.",
+  },
+  {
+    year: "1920",
+    text: "Just a few years after Graham Bell's wondrous invention, PS Govindaswamy Naidu installed Coimbatore's first telephone to manage their business establishments.",
+  },
+  {
+    year: "1921",
+    text: "On the auspicious occasion of Deepavali, the village elders of Poolaimedu along with the PSG brothers gathered to propose the establishment of a High School in the village.",
+  },
+  {
+    year: "1922",
+    text: "In order to mitigate the economic shocks of the First World War, the brothers set up Sri Ranga Vilas Ginning, Spinning & Weaving Mills.",
+  },
+  {
+    year: "1924",
+    text: "The small workshop made great headway and produced the first indigenous Centrifugal Pump.",
+  },
+  {
+    year: "1924",
+    text: "June 4, Sarvajana School - the school for the masses, opened its doors to the young learners of the Peelamedu village with 170 students.",
+  },
+  {
+    year: "1925",
+    text: "Thanthai Periyar, the rationalist leader visited Sarvajana School.",
+  },
+  {
+    year: "1926",
+    text: "PSG acquired the German Oil Expeller and ventured into mechanising agricultural operations at a time when such technologies were still in its primaeval stage.",
+  },
+  {
+    year: "1926",
+    text: "PSG & Sons' Charities Trust was born with an endowment sum of Rs. 2,01,116/-.",
+  },
+  {
+    year: "1926",
+    text: "Rabindranath Tagore visited Sarvajana School and sang the “Jana Gana Mana” which became our national anthem after independence.",
+  },
+  {
+    year: "1926",
+    text: "The Sarvajana High School came under the Trust's care.",
+  },
+  {
+    year: "1926",
+    text: "Foundation Stone was laid for PSG Industrial Institute at the workshop building making this historic space the nucleus of the PSG & Sons' Charities Trust.",
+  },
+  {
+    year: "1927",
+    text: "The first batch of students graduated from Sarvajana School.",
+  },
+  {
+    year: "1934",
+    text: "Mahatma Gandhi, the Father of our Nation visited the PSG Institutions.",
+  },
+  {
+    year: "1935",
+    text: "Hon. Sir. C.V. Raman, Indian Physicist and awardee of the Nobel Prize in Physics, visited the PSG Institutions.",
+  },
+  {
+    year: "1939",
+    text: "War Technicians of World War II selected PSG Industrial Institute as their training centre.",
+  },
+  {
+    year: "1939",
+    text: "PSG Polytechnic College was set up offering LME, LEE & LPT Programs",
+  },
+  {
+    year: "1941",
+    text: "PSG Industrial Institute manufactured the 1st indigenous electric motor",
+  },
+  {
+    year: "1943",
+    text: "PSG Middle School at Vedapatti was inaugurated after it was taken over from the Coimbatore District Board to help fulfil educational demands in the growing suburb of Vedapatti, Coimbatore.",
+  },
+  {
+    year: "1947",
+    text: "PSG Primary School welcomed its first batch of students.",
+  },
+  {
+    year: "1947",
+    text: "To fill the dearth of good arts colleges in the region, PSG College of Arts & Science was established.",
+  },
+  {
+    year: "1951",
+    text: "In order to meet the need of technical education in the growing industrial city of Coimbatore, PSG College of Technology was established.",
+  },
+  {
+    year: "1951",
+    text: "PSG Rural Health Centres began operating at Vedapatti, Karadivavi, Neelambur to provide affordable health care services to the marginalised communities in those areas.",
+  },
+  {
+    year: "1958",
+    text: "PSG College of Technology manufactured India's 1st variable speed electric motor.",
+  },
+  {
+    year: "1962",
+    text: "Thiru K. Kamaraj, the then Chief Minister of Tamil Nadu inaugurated the PSG Polytechnic Hostel",
+  },
+  {
+    year: "1969",
+    text: "The Prestigious President's Award was won by PSG Industrial Institute and PSG College of Technology for import substitution of the generalised electromechanical energy Converter",
+  },
+  {
+    year: "1972",
+    text: "PSG pioneered in usage of Computer Technology in industries for designing new products",
+  },
+  {
+    year: "1974",
+    text: "PSG & Sons' Charities Metallurgy and Foundry division was established in Neelambur",
+  },
+  {
+    year: "1976",
+    text: "PSG Polytechnic College was conferred with the Autonomous status",
+  },
+  {
+    year: "1977",
+    text: "PSG College of Technology celebrated its Silver Jubilee. It was also conferred with Autonomous status.",
+  },
+  {
+    year: "1978",
+    text: "PSG College of Arts & Science was conferred with Autonomous status",
+  },
+  {
+    year: "1985",
+    text: "PSG Institute of Medical Sciences & Research was established to provide quality medical education",
+  },
+  { year: "1986", text: "PSG Industrial Training Centre commenced classes" },
+  {
+    year: "1987",
+    text: "Diamond Jubilee Year celebrations of the PSG & Sons' Charities",
+  },
+  { year: "1989", text: "Golden Jubilee year of PSG Polytechnic College" },
+  { year: "1989", text: "MOU Signed with CII" },
+  {
+    year: "1989",
+    text: "PSG Hospitals was inaugurated as a teaching affiliate of PSG IMS&R",
+  },
+  {
+    year: "1989",
+    text: "PSG Centre for Sponsored Research & Consultancy was established",
+  },
+  {
+    year: "1989",
+    text: "PSG Centre for Non Formal & Continuing Education was opened",
+  },
+  { year: "1993", text: "PSG Urban Health Centre was set up." },
+  {
+    year: "1994",
+    text: "PSG Institute of Management was established as an autonomous institute dedicated to management studies and research.",
+  },
+  { year: "1994", text: "PSG College of Nursing was established." },
+  {
+    year: "1995",
+    text: "UNDP - Jute Diversified Production and Training Centre Started",
+  },
+  {
+    year: "1997",
+    text: "PSG College of Technology got accreditation for 18 study programs",
+  },
+  {
+    year: "1998",
+    text: "PSG Science & Technology Entrepreneurial Park (PSG STEP) was established",
+  },
+  { year: "1999", text: "PSG College of Physiotherapy commenced classes" },
+  {
+    year: "2000",
+    text: "National Assessment and Accreditation Council (NAAC) awarded the highest 5 Star Rating to PSG College of Arts & Science",
+  },
+  {
+    year: "2000",
+    text: "ISO 9001 Standard Certificate issued to PSG College of Technology by Standardisation Testing and Quality Certification (STQC)",
+  },
+  {
+    year: "2001",
+    text: "ISO 9001 Standard Certificate issued to PSG College of Arts & Science.",
+  },
+  {
+    year: "2001",
+    text: "PSG College of Technology Golden Jubilee inauguration exhibition was inaugurated",
+  },
+  {
+    year: "2001",
+    text: "PSG College of Pharmacy, PSG College of Arts & Science and PSG Centre for Advertising & Communication were opened.",
+  },
+  {
+    year: "2002",
+    text: "Hon. Dr. A.P.J. Abdul Kalam visited PSG Institutions.",
+  },
+  {
+    year: "2002",
+    text: "PSG Children's School began classes for Pre-KG through standard V",
+  },
+  {
+    year: "2003",
+    text: "PSG Offshore Healthcare Management Services began operations",
+  },
+  {
+    year: "2004",
+    text: "PSG College of Arts & Science bagged the most prestigious and coveted status, “College with Potential for Excellence” by the University Grants Commission (UGC)",
+  },
+  {
+    year: "2005",
+    text: "PSG Polytechnic College got accreditation for 5 study programs.",
+  },
+  {
+    year: "2005",
+    text: "PSG High School of Vedapatti began classes to meet the demand for quality education in the area.",
+  },
+  {
+    year: "2006",
+    text: "Products of PSG Institutions exhibited in commemoration of the 80th year Celebrations of PSG & Sons' Charities",
+  },
+  {
+    year: "2006",
+    text: "PSG Institute of Advanced Studies began accepting admission for its research and foreign degree programs.",
+  },
+  {
+    year: "2007",
+    text: "PSG College of Arts & Science accredited with A+ Grade by the National Assessment and Accreditation Council of India (NAAC)",
+  },
+  {
+    year: "2008",
+    text: "PSG Public School started under the Central Board of School Education Guidelines",
+  },
+  {
+    year: "2011",
+    text: "Diamond Jubilee year celebrations of PSG College of Technology.",
+  },
+  {
+    year: "2011",
+    text: "TechEx - An Exhibition of the Products of PSG Alumni was conducted",
+  },
+  {
+    year: "2013",
+    text: "Centenary celebrations of Dr. G.R.Damodaran's birth anniversary.",
+  },
+  {
+    year: "2013",
+    text: "PSG Vishnugranthi Day Care Centre opened exclusively for the wellbeing of Specially-abled Children with novel facilities",
+  },
+  {
+    year: "2014",
+    text: "PSG Institute of Technology and Applied Research was established for the promotion of popular education at all levels without any reservation",
+  },
+  {
+    year: "2015",
+    text: "Samarpan, an eco-friendly crematorium dedicated to the public began operating.",
+  },
+  {
+    year: "2015",
+    text: "PSG Centre For Academic Research And Excellence was set up.",
+  },
+  { year: "2017", text: "PSG Software Technologies began operations." },
+  {
+    year: "2021",
+    text: "PSG Institute of Architecture and Planning was established.",
+  },
+  { year: "2022", text: "PSG Convention Center was inaugurated." },
+  {
+    year: "2022",
+    text: "PSG College of Arts & Science celebrated its Platinum Jubilee by creating the Guinness World Record for the most clay pots arranged in a single formation by arranging 76,168 clay pots in the formation of Number 75.",
+  },
+  {
+    year: "2023",
+    text: "PSG College of Technology was the only engineering college in Tamil Nadu to host the G20 Lecture Series.",
+  },
+  { year: "2023", text: "Centenary celebration of PSG Sarvajana High School" },
+  { year: "2025", text: "PSG GRD Museum of science and technology" },
+  { year: "2026", text: "PSG World School" },
+];
+
 export const GalleryData = [
   {
     title: "",
