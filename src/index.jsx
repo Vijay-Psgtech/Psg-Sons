@@ -66,9 +66,11 @@ const anchors = [
 
 function Index() {
   const [activeSection, setActiveSection] = useState("home");
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
+
   return (
     <>
-      <Header />
+      <Header showAnnouncement={showAnnouncement} />
       <SideNavbar activeSection={activeSection} />
 
       <ReactFullpage
@@ -77,7 +79,9 @@ function Index() {
         scrollingSpeed={800}
         scrollOverflow={false}
         onLeave={(_, destination) => {
-          setActiveSection(anchors[destination.index]);
+          const nextSection = anchors[destination.index];
+          setActiveSection(nextSection);
+          setShowAnnouncement(destination.index === 0);
         }}
         render={() => {
           return (
