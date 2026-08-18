@@ -3,10 +3,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ showAnnouncement = false }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const announcementText =
+    "PSG Centenary Celebrations | Products of PSG Products Expo 2026 - Visit the Official Expo Website.";
   const navItems = [
     "Home",
     "Trustees",
@@ -51,67 +53,82 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50">
-        {/* Mobile Header */}
-        <div className="md:hidden flex justify-end p-4">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="text-black p-2 rounded-full bg-white shadow-md"
-          >
-            {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-          </button>
-        </div>
+      <div className="fixed top-0 left-0 w-full z-50">
+        <header>
+          {/* Mobile Header */}
+          <div className="md:hidden flex justify-end p-4">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-black p-2 rounded-full bg-white shadow-md"
+            >
+              {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+            </button>
+          </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg z-40">
-            <ul className="flex flex-col items-start px-6 py-4 space-y-4">
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg z-40">
+              <ul className="flex flex-col items-start px-6 py-4 space-y-4">
+                {navItems.map((item, i) => (
+                  <li key={i}>
+                    <button
+                      onClick={() => handleNavigation(item)}
+                      className="text-base font-bold text-black hover:text-blue-600 uppercase"
+                    >
+                      {item}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Desktop Header */}
+          <div className="hidden md:flex items-center justify-between px-10 py-2 shadow-md backdrop-blur-xs bg-transparent">
+            <a href="/#home" className="flex items-center px-12">
+              <img
+                src="/images/Logo.png"
+                alt="PSG Logo"
+                className="w-16 h-auto object-contain"
+              />
+            </a>
+            <nav className="flex space-x-16">
               {navItems.map((item, i) => (
-                <li key={i}>
-                  <button
-                    onClick={() => handleNavigation(item)}
-                    className="text-base font-bold text-black hover:text-blue-600 uppercase"
-                  >
-                    {item}
-                  </button>
-                </li>
+                <button
+                  key={i}
+                  onClick={() => handleNavigation(item)}
+                  className="text-md font-semibold text-black hover:text-blue-600 uppercase"
+                >
+                  {item}
+                </button>
               ))}
-            </ul>
+            </nav>
+            <div
+              className="flex items-center px-12 cursor-pointer"
+              onClick={() => setOpenModal(true)}
+            >
+              <img
+                src="/images/100yearsLogo.png"
+                alt="PSG Logo"
+                className="w-24 h-auto object-contain"
+              />
+            </div>
           </div>
-        )}
+        </header>
 
-        {/* Desktop Header */}
-        <div className="hidden md:flex items-center justify-between px-10 py-2 shadow-md backdrop-blur-xs bg-transparent">
-          <a href="/#home" className="flex items-center px-12">
-            <img
-              src="/images/Logo.png"
-              alt="PSG Logo"
-              className="w-16 h-auto object-contain"
-            />
-          </a>
-          <nav className="flex space-x-16">
-            {navItems.map((item, i) => (
-              <button
-                key={i}
-                onClick={() => handleNavigation(item)}
-                className="text-md font-semibold text-black hover:text-blue-600 uppercase"
-              >
-                {item}
-              </button>
-            ))}
-          </nav>
-          <div
-            className="flex items-center px-12 cursor-pointer"
-            onClick={() => setOpenModal(true)}
-          >
-            <img
-              src="/images/100yearsLogo.png"
-              alt="PSG Logo"
-              className="w-24 h-auto object-contain"
-            />
+         <div className={`announcement-bar ${showAnnouncement ? "" : "announcement-bar--collapsed"}`}>
+          <div className="announcement-track" aria-label="PSG announcement ticker">
+            <a
+              href="https://www.psgproducts.org/"
+              target="_blank"
+              rel="noreferrer"
+              className="announcement-item"
+            >
+              {announcementText}
+            </a>
           </div>
         </div>
-      </header>
+      </div>
       {Modal && (
         <AnimatePresence>
           <motion.div
